@@ -52,6 +52,9 @@
                                 <state key="normal" title="I'm new">
                                     <color key="titleColor" red="0.31906553226095274" green="0.76227395304568524" blue="0.0044824904125637735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="pVe-CW-75U" kind="show" id="DFR-Ji-UEj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -123,6 +126,41 @@
             </objects>
             <point key="canvasLocation" x="2647.826086956522" y="-367.63392857142856"/>
         </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="JxY-h3-Q47">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIM-E5-N6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="pVe-CW-75U" customClass="SignUpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iSJ-6y-aaO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SignUpLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5Sv-ga-BWe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llG-FA-QhZ">
+                                <rect key="frame" x="81" y="117" width="253" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Create your account">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.96326867430098118" blue="0.65715893404254211" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="30" name="MarkerFelt-Thin"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PIk-gb-oig"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3PM-jY-Vmx"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2655.072463768116" y="665.625"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="hn4-BR-bTC">
             <objects>
@@ -145,5 +183,6 @@
     <resources>
         <image name="HomePageLogo" width="3923" height="3704"/>
         <image name="LoginLogo" width="500" height="750"/>
+        <image name="SignUpLogo" width="500" height="750"/>
     </resources>
 </document>

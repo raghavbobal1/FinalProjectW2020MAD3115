@@ -27,6 +27,7 @@
 		BD3D10AE2421D2D900614770 /* MotorCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10AD2421D2D900614770 /* MotorCycle.swift */; };
 		BD3D10B42421D36700614770 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10B32421D36700614770 /* Validations.swift */; };
 		BD3D10B72421D39200614770 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10B62421D39200614770 /* String+Extensions.swift */; };
+		BD3D10B92421D3B200614770 /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10B82421D3B200614770 /* Float+Extensions.swift */; };
 		BDC29ED32420A10200CC26E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED22420A10200CC26E4 /* AppDelegate.swift */; };
 		BDC29ED52420A10200CC26E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED42420A10200CC26E4 /* SceneDelegate.swift */; };
 		BDC29ED72420A10200CC26E4 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED62420A10200CC26E4 /* HomePageViewController.swift */; };
@@ -56,6 +57,7 @@
 		BD3D10AD2421D2D900614770 /* MotorCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorCycle.swift; sourceTree = "<group>"; };
 		BD3D10B32421D36700614770 /* Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		BD3D10B62421D39200614770 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		BD3D10B82421D3B200614770 /* Float+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
 		BDC29ECF2420A10200CC26E4 /* FinalProjectzW2020MAD3115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectzW2020MAD3115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC29ED22420A10200CC26E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDC29ED42420A10200CC26E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				BD3D10B62421D39200614770 /* String+Extensions.swift */,
+				BD3D10B82421D3B200614770 /* Float+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				BD3D10962421D08B00614770 /* Driver.swift in Sources */,
 				BD3D109B2421D16A00614770 /* PasswordUtil.swift in Sources */,
 				BD3D10A62421D26F00614770 /* Vehicle.swift in Sources */,
+				BD3D10B92421D3B200614770 /* Float+Extensions.swift in Sources */,
 				BD3D10A12421D1CC00614770 /* TypeNameProtocol.swift in Sources */,
 				BD3D10922421D04900614770 /* Contact.swift in Sources */,
 				BD3D10902421CF4800614770 /* Person.swift in Sources */,

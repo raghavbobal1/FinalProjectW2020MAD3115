@@ -22,36 +22,5 @@ class Car: Vehicle
                fuelType: fuelType, isSelfDrive: isSelfDrive, isInsured: isInsured, insuranceProviderName: insuranceProviderName, numberOfSeat: numberOfSeat, baseRate: baseRate, perKmRate: perKmRate, driver: driver)
     
   }
-    
-   init(carDict: [String: Any]) throws {
-        
-    guard let carType = carDict["carType"] as? String else {
-         throw JsonValidationError.isNotValidInput(
-             className: String(describing:type(of: self)),
-             memberName: "carType")
-     }
-     
-     guard let carColor = carDict["carColor"] as? String else {
-         throw JsonValidationError.isNotValidInput(
-             className: String(describing:type(of: self)),
-             memberName: "carColor")
-     }
-    self.carType=carType
-    self.carColor=carColor
-    try super.init(vehicleDict: carDict)
-        
-    }
-    
-    override func display()
-    {
-        var logger = Log()
-
-        print("\n\t\tVehicle ID              : \(vehicleId)", to: &logger)
-        print("\t\tDescription             : \(description ?? "")", to: &logger)
-        print("\t\tManufacturer            : \(manufacturer)", to: &logger)
-        print("\t\tType of fuel            : \(fuelType)", to: &logger)
-        print("\t\tCar Type                : \(carType)", to: &logger)
-        print("\t\tCar Color               : \(carColor)", to: &logger)
-    }
-    
+   
 }

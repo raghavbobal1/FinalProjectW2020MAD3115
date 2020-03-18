@@ -26,52 +26,5 @@ import Foundation
     
    }
     
-    
-    init(busDict: [String: Any]) throws {
-        
-        guard let accessibilityServices = busDict["accessibilityServices"] as? Bool else {
-             throw JsonValidationError.isNotValidInput(
-                 className: String(describing:type(of: self)),
-                 memberName: "accessibilityServices")
-         }
-         
-         guard let busType = busDict["busType"] as? String else {
-             throw JsonValidationError.isNotValidInput(
-                 className: String(describing:type(of: self)),
-                 memberName: "busType")
-         }
-         
-         guard let wifiAvailability = busDict["wifiAvailability"] as? Bool else {
-             throw JsonValidationError.isNotValidInput(
-                 className: String(describing:type(of: self)),
-                 memberName: "wifiAvailability")
-         }
-        guard let standingCapacity = busDict["standingCapacity"] as? Int else {
-            throw JsonValidationError.isNotValidInput(
-                className: String(describing:type(of: self)),
-                memberName: "standingCapacity")
-        }
-        
-        self.busType = busType
-        self.accessibilityServices = accessibilityServices
-        self.wifiAvailability = wifiAvailability
-        self.standingCapacity = standingCapacity
-        try super.init(vehicleDict: busDict)
-    
-    }
-    
-    override func display()
-    {
-            var logger = Log()
-
-           print("\n\t\tVehicle ID              : \(vehicleId)", to: &logger)
-           print("\t\tBus Type                : \(busType)", to: &logger)
-           print("\t\tDescription             : \(String(describing: description ?? ""))", to: &logger)
-           print("\t\tManufacturer            : \(manufacturer)", to: &logger)
-           print("\t\tType Of Fuel            : \(fuelType)", to: &logger)
-           print("\t\tAccessibility Services  : \(accessibilityServices)", to: &logger)
-           print("\t\tStanding Capacity       : \(standingCapacity) people", to: &logger)        
-    }
-    
 }
 

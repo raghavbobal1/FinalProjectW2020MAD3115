@@ -154,7 +154,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="JxY-h3-Q47">
             <objects>
-                <viewController id="pVe-CW-75U" customClass="SignUpViewController" sceneMemberID="viewController">
+                <viewController id="pVe-CW-75U" customClass="SignUpViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iSJ-6y-aaO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,7 +209,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BackButtonLogo"/>
                                 <connections>
-                                    <action selector="backbtn:" destination="pVe-CW-75U" eventType="touchUpInside" id="KCa-Fa-fyG"/>
+                                    <action selector="backBtn:" destination="pVe-CW-75U" eventType="touchUpInside" id="PlG-yM-1aa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -217,6 +217,12 @@
                         <viewLayoutGuide key="safeArea" id="PIk-gb-oig"/>
                     </view>
                     <navigationItem key="navigationItem" id="3PM-jY-Vmx"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="cK5-6g-S2l" id="ymC-c1-Gjl"/>
+                        <outlet property="txtMobileNumber" destination="38j-86-cFh" id="9pN-PK-jb0"/>
+                        <outlet property="txtPassword" destination="6oO-fg-nmH" id="d55-dn-WzQ"/>
+                        <outlet property="txtfullName" destination="FLr-G8-PbN" id="bIN-hg-D88"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIM-E5-N6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

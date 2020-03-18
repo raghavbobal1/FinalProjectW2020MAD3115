@@ -10,14 +10,22 @@ import UIKit
 
 class SignUpViewController: UIViewController
 {
-       override func viewDidLoad()
+    @IBOutlet weak var txtfullName: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtMobileNumber: UITextField!
+    override func viewDidLoad()
        {
            super.viewDidLoad()
        }
     
-    @IBAction func backbttn(_ sender: Any)
+   @IBAction func backBtn(_ sender: Any)
     {
         navigationController?.popViewController(animated: true)
     }
+    
+    
+    
+    
     
 }

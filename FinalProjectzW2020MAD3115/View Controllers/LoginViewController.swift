@@ -10,6 +10,10 @@ import UIKit
 
 class LoginViewController: UIViewController
 {
+    
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtUserPassword: UITextField!
+    @IBOutlet weak var switchRememberMe: UISwitch!
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -20,4 +24,7 @@ class LoginViewController: UIViewController
         navigationController?.popViewController(animated: true)
     }
   
+    
+    
+    
 }

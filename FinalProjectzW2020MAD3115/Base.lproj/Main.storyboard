@@ -125,11 +125,27 @@
                                     <action selector="backBtn:" destination="bdW-kk-6A9" eventType="touchUpInside" id="DdS-3Y-OKI"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3VD-hT-te0">
+                                <rect key="frame" x="57" y="729" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXV-1i-cMQ">
+                                <rect key="frame" x="112" y="734" width="105" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" red="0.84934815020253807" green="0.76570484764962121" blue="0.6736911025875566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tDr-TW-NQY"/>
                     </view>
                     <navigationItem key="navigationItem" id="nnt-iq-Aek"/>
+                    <connections>
+                        <outlet property="switchRememberMe" destination="3VD-hT-te0" id="s03-LO-wE7"/>
+                        <outlet property="txtEmail" destination="8hk-pa-Ab6" id="pUO-iy-vtT"/>
+                        <outlet property="txtUserPassword" destination="BaX-Gw-mQg" id="iXz-6B-85I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcn-vo-DHi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

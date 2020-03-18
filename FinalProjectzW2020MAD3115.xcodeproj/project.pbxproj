@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BD3D10882420B7D100614770 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10872420B7D100614770 /* LoginViewController.swift */; };
 		BD3D108B2420C20400614770 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D108A2420C20400614770 /* SignUpViewController.swift */; };
+		BD3D108E2421CF1D00614770 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D108D2421CF1D00614770 /* Customer.swift */; };
+		BD3D10902421CF4800614770 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D108F2421CF4800614770 /* Person.swift */; };
 		BDC29ED32420A10200CC26E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED22420A10200CC26E4 /* AppDelegate.swift */; };
 		BDC29ED52420A10200CC26E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED42420A10200CC26E4 /* SceneDelegate.swift */; };
 		BDC29ED72420A10200CC26E4 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED62420A10200CC26E4 /* HomePageViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		BD3D10872420B7D100614770 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD3D108A2420C20400614770 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BD3D108D2421CF1D00614770 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		BD3D108F2421CF4800614770 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BDC29ECF2420A10200CC26E4 /* FinalProjectzW2020MAD3115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectzW2020MAD3115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC29ED22420A10200CC26E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDC29ED42420A10200CC26E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,15 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		BD3D108C2421CF0000614770 /* Required Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D108F2421CF4800614770 /* Person.swift */,
+				BD3D108D2421CF1D00614770 /* Customer.swift */,
+			);
+			path = "Required Classes";
+			sourceTree = "<group>";
+		};
 		BDC29EC62420A10200CC26E4 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +89,7 @@
 				BDC29ED82420A10200CC26E4 /* Main.storyboard */,
 				BDC29EDD2420A10400CC26E4 /* LaunchScreen.storyboard */,
 				BDC29EE02420A10400CC26E4 /* Info.plist */,
+				BD3D108C2421CF0000614770 /* Required Classes */,
 				BDC29EDB2420A10400CC26E4 /* Assets.xcassets */,
 			);
 			path = FinalProjectzW2020MAD3115;
@@ -153,8 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3D10882420B7D100614770 /* LoginViewController.swift in Sources */,
+				BD3D108E2421CF1D00614770 /* Customer.swift in Sources */,
 				BDC29ED72420A10200CC26E4 /* HomePageViewController.swift in Sources */,
 				BDC29ED32420A10200CC26E4 /* AppDelegate.swift in Sources */,
+				BD3D10902421CF4800614770 /* Person.swift in Sources */,
 				BDC29ED52420A10200CC26E4 /* SceneDelegate.swift in Sources */,
 				BD3D108B2420C20400614770 /* SignUpViewController.swift in Sources */,
 			);

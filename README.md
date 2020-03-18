@@ -15,6 +15,4 @@ We have used the following packages and classes to implement the above given str
 
 
 ## REFERENCES
-* [Apps Developer Blog](http://www.appsdeveloperblog.com/encrypt-user-password-example-java/) - Used to create the encryption/decryption method
-* [DEV2QA](https://www.dev2qa.com/how-to-write-console-output-to-text-file-in-java/) - Used to write output to .txt file
-* [Geeks for Geeks](https://www.geeksforgeeks.org/check-email-address-valid-not-java/) - Used for email validation regex
+* [Stack Overflow](https://stackoverflow.com/questions/29923881/could-not-insert-new-outlet-connection-could-not-find-any-information-for-the-c) - Used to solve view controller error.

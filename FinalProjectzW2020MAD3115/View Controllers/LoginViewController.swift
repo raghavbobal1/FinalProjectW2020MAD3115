@@ -10,10 +10,14 @@ import UIKit
 
 class LoginViewController: UIViewController
 {
-
     override func viewDidLoad()
     {
         super.viewDidLoad()
+    }
+    
+@IBAction func backBtn(_ sender: Any)
+    {
+        navigationController?.popViewController(animated: true)
     }
   
 }

@@ -14,4 +14,10 @@ class SignUpViewController: UIViewController
        {
            super.viewDidLoad()
        }
+    
+    @IBAction func backbttn(_ sender: Any)
+    {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

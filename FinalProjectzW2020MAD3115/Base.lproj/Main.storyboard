@@ -42,7 +42,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bdW-kk-6A9" kind="show" id="dcb-R7-d3f"/>
+                                    <segue destination="bdW-kk-6A9" kind="show" id="FaI-ep-scU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucm-VR-QYi">
@@ -53,7 +53,7 @@
                                     <color key="titleColor" red="0.31906553226095274" green="0.76227395304568524" blue="0.0044824904125637735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pVe-CW-75U" kind="show" id="DFR-Ji-UEj"/>
+                                    <segue destination="pVe-CW-75U" kind="show" id="PDJ-DV-DHi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,16 +69,15 @@
         <!--Login View Controller-->
         <scene sceneID="GP7-if-b1f">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hcn-vo-DHi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="bdW-kk-6A9" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="bdW-kk-6A9" customClass="LoginViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yfT-ZK-1fo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fKv-JY-rGn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginPageLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fKv-JY-rGn">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.87837684149999995" green="0.87860590220000001" blue="0.86966252330000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.95864257635423988" green="0.96201215117430938" blue="0.97212087563451777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log in to your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeK-nT-y3k">
                                 <rect key="frame" x="121" y="197" width="172" height="21"/>
@@ -118,24 +117,33 @@
                                 <color key="textColor" red="0.71407825242487311" green="0.15641487810446397" blue="0.13384595217963505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qy0-Gb-I7C">
+                                <rect key="frame" x="0.0" y="44" width="74" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="BackButtonLogo"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="bdW-kk-6A9" eventType="touchUpInside" id="DdS-3Y-OKI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tDr-TW-NQY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nnt-iq-Aek"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hcn-vo-DHi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2647.826086956522" y="-367.63392857142856"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="JxY-h3-Q47">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OIM-E5-N6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="pVe-CW-75U" customClass="SignUpViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iSJ-6y-aaO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SignUpLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5Sv-ga-BWe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SignUpPageLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5Sv-ga-BWe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83063179249999997" green="1" blue="0.42353993649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -180,12 +188,21 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGm-lc-Wvr">
+                                <rect key="frame" x="8" y="44" width="74" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="BackButtonLogo"/>
+                                <connections>
+                                    <action selector="backbtn:" destination="pVe-CW-75U" eventType="touchUpInside" id="KCa-Fa-fyG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PIk-gb-oig"/>
                     </view>
                     <navigationItem key="navigationItem" id="3PM-jY-Vmx"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIM-E5-N6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2655.072463768116" y="665.625"/>
         </scene>
@@ -209,8 +226,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BackButtonLogo" width="1200" height="630"/>
         <image name="HomePageLogo" width="3923" height="3704"/>
-        <image name="LoginLogo" width="500" height="750"/>
-        <image name="SignUpLogo" width="500" height="750"/>
+        <image name="LoginPageLogo" width="500" height="750"/>
+        <image name="SignUpPageLogo" width="500" height="750"/>
     </resources>
 </document>

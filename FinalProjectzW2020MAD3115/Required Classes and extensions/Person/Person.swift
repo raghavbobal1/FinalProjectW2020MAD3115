@@ -10,7 +10,7 @@ import Foundation
 
 /* Person class containing necessary variables and functions to use*/
 
-class Person : IDisplayDelegate, TypeName
+class Person : TypeName
 {
     func display(){
         print("Person")

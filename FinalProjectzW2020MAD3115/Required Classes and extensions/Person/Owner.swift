@@ -16,88 +16,14 @@ class Owner : Person
     var url: String
     var vehicleList = [String: Vehicle]()
     
-    init(id: String, firstName: String, lastName: String, gender: Gender, birthDate: Date?, age:Int,
-        userName: String, password: String, contact: Contact, companyTitle: String,  url: String,
+    init(id: String, fullName: String, gender: Gender, birthDate: Date?, age:Int,
+        email: String, password: String, contact: Contact, companyTitle: String,  url: String,
         vehicleList: [String: Vehicle])
     {
         self.companyTitle = companyTitle
         self.url = url
         self.vehicleList = vehicleList
-        super.init(id: id, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, userName: userName, password: password, contact: contact)
+        super.init(id: id, fullName: fullName, gender: gender, birthDate: birthDate, email: email, password: password, contact: contact)
     }
     
-    init(ownerDict: [String: Any]) throws{
-    
-        
-        guard let companyTitle = ownerDict["companyTitle"] as? String else {
-            throw JsonValidationError.isNotValidInput(
-                className: String(describing:type(of: self)),
-                memberName: "companyTitle")
-        }
-        
-        guard let url = ownerDict["url"] as? String else {
-            throw JsonValidationError.isNotValidInput(
-                className: String(describing:type(of: self)),
-                memberName: "url")
-        }
-        
-        // getVehicles
-        guard let vehicles = ownerDict["vehicles"] as? [String] else {
-            throw JsonValidationError.isNotValidInput(
-                className: String(describing:type(of: self)),
-                memberName: "vehicles")
-        }
-        vehicleManger = ObjectManager.getInstance()
-        var vehicleObjectList = [String: Vehicle]()
-        for vehicleId in vehicles{
-            if let vehicle = vehicleManger.getVehicleById(id: vehicleId){
-                vehicleObjectList.updateValue(vehicle, forKey: vehicleId)
-            }
-        }
-        
-        self.companyTitle = companyTitle
-        self.url = url
-        self.vehicleList = vehicleObjectList
-        try super.init(personDict: ownerDict)
-        
-    }
-    
-    
-    
-    override func display()
-    {
-        var logger = Log()
-        print("\nID          \t: \(id)", to: &logger)
-        print("First Name     : \(firstName)", to: &logger)
-        print("Last Name      : \(lastName)", to: &logger)
-        print("Gender         : \(gender)", to: &logger)
-        print("Date of Birth  : \((birthDate ?? Date()).printFormat())", to: &logger)
-        print("Age            : \(age)", to: &logger)
-        print("Username       : \(userName)", to: &logger)
-        
-    }
-    
-    func display(withVehicles: Bool){
-        self.display()
-        if withVehicles{
-            print("Vehicles Owned :\n", to: &logger)
-            for i in vehicleList
-            {
-              print("\t\t", to: &logger)
-              print(i.value.display(), to: &logger)
-            }
-        }
-    }
-
-    func addVehicle(vehicleId: String, vehicle: Vehicle)
-    {
-      if vehicleList.keys.contains(vehicleId)
-      {
-        print("\nERROR! VEHICLE ALREADY IN LIST", to: &logger)
-      }
-      else 
-      {
-        vehicleList.updateValue(vehicle,forKey: vehicleId)
-      }
-    }
 }

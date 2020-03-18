@@ -12,9 +12,6 @@ import Foundation
 
 class Person : TypeName
 {
-    func display(){
-        print("Person")
-    }
      var id: String
      var fullName: String
      var gender: Gender
@@ -25,9 +22,8 @@ class Person : TypeName
      var contact: Contact
      var salt: String
     
-    init(id: String, fullName: String, gender: Gender,birthDate: Date?, email: String, password: String, contact: Contact)
+    init(fullName: String, gender: Gender,birthDate: Date?, email: String, password: String, contact: Contact)
     {
-        self.id = id
         self.fullName = fullName
         self.gender = gender
         self.birthDate = birthDate

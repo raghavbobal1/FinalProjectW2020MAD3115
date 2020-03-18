@@ -62,11 +62,8 @@ class SignUpViewController: UIViewController
               self.present(alertController, animated: true, completion: nil)
               return
           }
-          let c = Customer(customerId: txtNewCustomerId.text!, name: txtNewCustomerName.text!, email: txtNewCustomerEmail.text!, userName: txtNewCustomerUserName.text!, password: txtNewCustomerPassword.text!, mobileNumber: txtNewCustomerNumber.text!, dob: txtNewCustomerDOB.text!)
-          
-              DataRepository.getInstance().addCustomer(customer: c)
-          
-          
+          let c = Customer(fullName: txtfullName, gender: <#T##Gender#>, birthDate: <#T##Date?#>, age: <#T##Int#>, email: <#T##String#>, password: <#T##String#>, contact: <#T##Contact#>)
+        
           let alertController = UIAlertController(title: "Success", message: "Customer Added", preferredStyle: .alert)
               alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:
               {action in self.dismissView()}))

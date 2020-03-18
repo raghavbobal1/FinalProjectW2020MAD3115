@@ -21,6 +21,7 @@
 		BD3D10A12421D1CC00614770 /* TypeNameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10A02421D1CC00614770 /* TypeNameProtocol.swift */; };
 		BD3D10A32421D1EB00614770 /* OutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10A22421D1EB00614770 /* OutputStream.swift */; };
 		BD3D10A62421D26F00614770 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10A52421D26F00614770 /* Vehicle.swift */; };
+		BD3D10A82421D28800614770 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10A72421D28800614770 /* Car.swift */; };
 		BDC29ED32420A10200CC26E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED22420A10200CC26E4 /* AppDelegate.swift */; };
 		BDC29ED52420A10200CC26E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED42420A10200CC26E4 /* SceneDelegate.swift */; };
 		BDC29ED72420A10200CC26E4 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED62420A10200CC26E4 /* HomePageViewController.swift */; };
@@ -44,6 +45,7 @@
 		BD3D10A02421D1CC00614770 /* TypeNameProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeNameProtocol.swift; sourceTree = "<group>"; };
 		BD3D10A22421D1EB00614770 /* OutputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputStream.swift; sourceTree = "<group>"; };
 		BD3D10A52421D26F00614770 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		BD3D10A72421D28800614770 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		BDC29ECF2420A10200CC26E4 /* FinalProjectzW2020MAD3115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectzW2020MAD3115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC29ED22420A10200CC26E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDC29ED42420A10200CC26E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				BD3D10A52421D26F00614770 /* Vehicle.swift */,
+				BD3D10A72421D28800614770 /* Car.swift */,
 			);
 			path = Vehicles;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				BD3D10A32421D1EB00614770 /* OutputStream.swift in Sources */,
 				BDC29ED52420A10200CC26E4 /* SceneDelegate.swift in Sources */,
 				BD3D108B2420C20400614770 /* SignUpViewController.swift in Sources */,
+				BD3D10A82421D28800614770 /* Car.swift in Sources */,
 				BD3D10982421D0AB00614770 /* Gender.swift in Sources */,
 				BD3D109F2421D19900614770 /* ObjectManager.swift in Sources */,
 				BD3D109D2421D19300614770 /* CustomFileHandler.swift in Sources */,

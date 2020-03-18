@@ -12,7 +12,6 @@ class Person
      var id: String
      var fullName: String
      var gender: Gender
-     var email: String
      var password: String
      var contact: Contact
      var salt: String

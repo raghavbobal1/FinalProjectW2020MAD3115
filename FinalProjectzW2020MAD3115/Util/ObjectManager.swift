@@ -97,43 +97,35 @@ struct ObjectManager{
     func addObject(vehicleRent: VehicleRent){
         ObjectManager.rentObjects.append(vehicleRent)
     }
-    
-    func display(type: String = "all"){
-        
-        func displaySet(displayProtocalInstances: [ IDisplayDelegate]){
-            if !displayProtocalInstances.isEmpty {
-                for displayInstance in displayProtocalInstances{
-                    displayInstance.display()
-                }
-            }
-        }
-        switch type.lowercased() {
-            case "vehicle":
-                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[Car.typeSName] ?? [])
-                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[Bus.typeSName] ?? [])
-                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[MotorCycle.typeSName] ?? [])
-            
-            case "person":
-                displaySet(displayProtocalInstances: ObjectManager.personObjects[Customer.typeSName] ?? [])
-                displaySet(displayProtocalInstances: ObjectManager.personObjects[Owner.typeSName] ?? [])
-            
-                displaySet(displayProtocalInstances: ObjectManager.personObjects[Driver.typeSName] ?? [])
-            case "vehiclerent":
-               displaySet(displayProtocalInstances: ObjectManager.rentObjects)
-            default:
-                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[Car.typeSName] ?? [])
-                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[Bus.typeSName] ?? [])
-                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[MotorCycle.typeSName] ?? [])
-                displaySet(displayProtocalInstances: ObjectManager.personObjects[Customer.typeSName] ?? [])
-                displaySet(displayProtocalInstances: ObjectManager.personObjects[Owner.typeSName] ?? [])
-            
-                displaySet(displayProtocalInstances: ObjectManager.personObjects[Driver.typeSName] ?? [])
-                displaySet(displayProtocalInstances: ObjectManager.rentObjects)
 
-            }
+    
+//        switch type.lowercased() {
+//            case "vehicle":
+//                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[Car.typeSName] ?? [])
+//                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[Bus.typeSName] ?? [])
+//                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[MotorCycle.typeSName] ?? [])
+//
+//            case "person":
+//                displaySet(displayProtocalInstances: ObjectManager.personObjects[Customer.typeSName] ?? [])
+//                displaySet(displayProtocalInstances: ObjectManager.personObjects[Owner.typeSName] ?? [])
+//
+//                displaySet(displayProtocalInstances: ObjectManager.personObjects[Driver.typeSName] ?? [])
+//            case "vehiclerent":
+//               displaySet(displayProtocalInstances: ObjectManager.rentObjects)
+//            default:
+//                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[Car.typeSName] ?? [])
+//                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[Bus.typeSName] ?? [])
+//                displaySet(displayProtocalInstances: ObjectManager.vehicleObjects[MotorCycle.typeSName] ?? [])
+//                displaySet(displayProtocalInstances: ObjectManager.personObjects[Customer.typeSName] ?? [])
+//                displaySet(displayProtocalInstances: ObjectManager.personObjects[Owner.typeSName] ?? [])
+//
+//                displaySet(displayProtocalInstances: ObjectManager.personObjects[Driver.typeSName] ?? [])
+//                displaySet(displayProtocalInstances: ObjectManager.rentObjects)
+//
+//            }
         
     }
     
     
     
-}
+

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Vehicle: IDisplayDelegate, TypeName , Hashable
+class Vehicle: TypeName , Hashable
 {
     
     

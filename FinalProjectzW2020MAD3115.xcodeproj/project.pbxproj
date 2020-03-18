@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		BD3D10882420B7D100614770 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10872420B7D100614770 /* LoginViewController.swift */; };
 		BD3D108B2420C20400614770 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D108A2420C20400614770 /* SignUpViewController.swift */; };
-		BD3D108E2421CF1D00614770 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D108D2421CF1D00614770 /* Customer.swift */; };
-		BD3D10902421CF4800614770 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D108F2421CF4800614770 /* Person.swift */; };
-		BD3D10922421D04900614770 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10912421D04900614770 /* Contact.swift */; };
-		BD3D10942421D06C00614770 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10932421D06C00614770 /* Owner.swift */; };
-		BD3D10962421D08B00614770 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10952421D08B00614770 /* Driver.swift */; };
-		BD3D10982421D0AB00614770 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10972421D0AB00614770 /* Gender.swift */; };
 		BD3D109B2421D16A00614770 /* PasswordUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D109A2421D16A00614770 /* PasswordUtil.swift */; };
 		BD3D109D2421D19300614770 /* CustomFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D109C2421D19300614770 /* CustomFileHandler.swift */; };
 		BD3D109F2421D19900614770 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D109E2421D19900614770 /* ObjectManager.swift */; };
@@ -29,6 +23,15 @@
 		BD3D10B72421D39200614770 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10B62421D39200614770 /* String+Extensions.swift */; };
 		BD3D10B92421D3B200614770 /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10B82421D3B200614770 /* Float+Extensions.swift */; };
 		BD3D10BB2421D3E100614770 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10BA2421D3E100614770 /* Date+Extensions.swift */; };
+		BD3D10C12421D75600614770 /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10C02421D75600614770 /* VehicleRent.swift */; };
+		BD3D10C32421D91300614770 /* JSONfiles in Resources */ = {isa = PBXBuildFile; fileRef = BD3D10C22421D91300614770 /* JSONfiles */; };
+		BD91E1192422ADC900157F9A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91E1182422ADC900157F9A /* Person.swift */; };
+		BD91E11B2422ADD400157F9A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91E11A2422ADD400157F9A /* Customer.swift */; };
+		BD91E11D2422ADDA00157F9A /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91E11C2422ADDA00157F9A /* Address.swift */; };
+		BD91E11F2422ADDF00157F9A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91E11E2422ADDF00157F9A /* Contact.swift */; };
+		BD91E1212422ADE300157F9A /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91E1202422ADE300157F9A /* Driver.swift */; };
+		BD91E1232422ADED00157F9A /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91E1222422ADED00157F9A /* Owner.swift */; };
+		BD91E1252422ADF200157F9A /* Gender .swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91E1242422ADF200157F9A /* Gender .swift */; };
 		BDC29ED32420A10200CC26E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED22420A10200CC26E4 /* AppDelegate.swift */; };
 		BDC29ED52420A10200CC26E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED42420A10200CC26E4 /* SceneDelegate.swift */; };
 		BDC29ED72420A10200CC26E4 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC29ED62420A10200CC26E4 /* HomePageViewController.swift */; };
@@ -40,12 +43,6 @@
 /* Begin PBXFileReference section */
 		BD3D10872420B7D100614770 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD3D108A2420C20400614770 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		BD3D108D2421CF1D00614770 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
-		BD3D108F2421CF4800614770 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		BD3D10912421D04900614770 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		BD3D10932421D06C00614770 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
-		BD3D10952421D08B00614770 /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
-		BD3D10972421D0AB00614770 /* Gender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		BD3D109A2421D16A00614770 /* PasswordUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordUtil.swift; sourceTree = "<group>"; };
 		BD3D109C2421D19300614770 /* CustomFileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFileHandler.swift; sourceTree = "<group>"; };
 		BD3D109E2421D19900614770 /* ObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
@@ -60,6 +57,15 @@
 		BD3D10B62421D39200614770 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		BD3D10B82421D3B200614770 /* Float+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
 		BD3D10BA2421D3E100614770 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		BD3D10C02421D75600614770 /* VehicleRent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
+		BD3D10C22421D91300614770 /* JSONfiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JSONfiles; sourceTree = "<group>"; };
+		BD91E1182422ADC900157F9A /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BD91E11A2422ADD400157F9A /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		BD91E11C2422ADDA00157F9A /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		BD91E11E2422ADDF00157F9A /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		BD91E1202422ADE300157F9A /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		BD91E1222422ADED00157F9A /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		BD91E1242422ADF200157F9A /* Gender .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gender .swift"; sourceTree = "<group>"; };
 		BDC29ECF2420A10200CC26E4 /* FinalProjectzW2020MAD3115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectzW2020MAD3115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC29ED22420A10200CC26E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDC29ED42420A10200CC26E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,13 +97,16 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		BD3D108C2421CF0000614770 /* Required Classes */ = {
+		BD3D108C2421CF0000614770 /* Required Classes and extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BD3D10C02421D75600614770 /* VehicleRent.swift */,
+				BD91E1172422ADB200157F9A /* Person */,
 				BD3D10A42421D25700614770 /* Vehicles */,
-				BD3D10AF2421D30500614770 /* Person */,
+				BD3D10B22421D34E00614770 /* Exceptions */,
+				BD3D10B52421D37B00614770 /* Extensions */,
 			);
-			path = "Required Classes";
+			path = "Required Classes and extensions";
 			sourceTree = "<group>";
 		};
 		BD3D10992421D15200614770 /* Util */ = {
@@ -124,19 +133,6 @@
 			path = Vehicles;
 			sourceTree = "<group>";
 		};
-		BD3D10AF2421D30500614770 /* Person */ = {
-			isa = PBXGroup;
-			children = (
-				BD3D108F2421CF4800614770 /* Person.swift */,
-				BD3D10912421D04900614770 /* Contact.swift */,
-				BD3D108D2421CF1D00614770 /* Customer.swift */,
-				BD3D10932421D06C00614770 /* Owner.swift */,
-				BD3D10952421D08B00614770 /* Driver.swift */,
-				BD3D10972421D0AB00614770 /* Gender.swift */,
-			);
-			path = Person;
-			sourceTree = "<group>";
-		};
 		BD3D10B22421D34E00614770 /* Exceptions */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,9 +151,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BD91E1172422ADB200157F9A /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				BD91E1182422ADC900157F9A /* Person.swift */,
+				BD91E11A2422ADD400157F9A /* Customer.swift */,
+				BD91E11C2422ADDA00157F9A /* Address.swift */,
+				BD91E11E2422ADDF00157F9A /* Contact.swift */,
+				BD91E1202422ADE300157F9A /* Driver.swift */,
+				BD91E1242422ADF200157F9A /* Gender .swift */,
+				BD91E1222422ADED00157F9A /* Owner.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
 		BDC29EC62420A10200CC26E4 = {
 			isa = PBXGroup;
 			children = (
+				BD3D10C22421D91300614770 /* JSONfiles */,
 				BDC29ED12420A10200CC26E4 /* FinalProjectzW2020MAD3115 */,
 				BDC29ED02420A10200CC26E4 /* Products */,
 			);
@@ -176,15 +187,13 @@
 			children = (
 				BDC29ED22420A10200CC26E4 /* AppDelegate.swift */,
 				BDC29ED42420A10200CC26E4 /* SceneDelegate.swift */,
-				BD3D10B52421D37B00614770 /* Extensions */,
 				BD3D10892420B7D900614770 /* View Controllers */,
 				BDC29ED82420A10200CC26E4 /* Main.storyboard */,
 				BDC29EDD2420A10400CC26E4 /* LaunchScreen.storyboard */,
-				BDC29EE02420A10400CC26E4 /* Info.plist */,
-				BD3D10B22421D34E00614770 /* Exceptions */,
 				BD3D10992421D15200614770 /* Util */,
-				BD3D108C2421CF0000614770 /* Required Classes */,
+				BD3D108C2421CF0000614770 /* Required Classes and extensions */,
 				BDC29EDB2420A10400CC26E4 /* Assets.xcassets */,
+				BDC29EE02420A10400CC26E4 /* Info.plist */,
 			);
 			path = FinalProjectzW2020MAD3115;
 			sourceTree = "<group>";
@@ -249,6 +258,7 @@
 			files = (
 				BDC29EDF2420A10400CC26E4 /* LaunchScreen.storyboard in Resources */,
 				BDC29EDC2420A10400CC26E4 /* Assets.xcassets in Resources */,
+				BD3D10C32421D91300614770 /* JSONfiles in Resources */,
 				BDC29EDA2420A10200CC26E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,28 +271,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3D10882420B7D100614770 /* LoginViewController.swift in Sources */,
-				BD3D108E2421CF1D00614770 /* Customer.swift in Sources */,
 				BD3D10AA2421D2A200614770 /* Bus.swift in Sources */,
 				BD3D10AC2421D2B900614770 /* FuelType.swift in Sources */,
 				BDC29ED72420A10200CC26E4 /* HomePageViewController.swift in Sources */,
+				BD3D10C12421D75600614770 /* VehicleRent.swift in Sources */,
 				BDC29ED32420A10200CC26E4 /* AppDelegate.swift in Sources */,
-				BD3D10942421D06C00614770 /* Owner.swift in Sources */,
-				BD3D10962421D08B00614770 /* Driver.swift in Sources */,
 				BD3D109B2421D16A00614770 /* PasswordUtil.swift in Sources */,
+				BD91E1252422ADF200157F9A /* Gender .swift in Sources */,
+				BD91E11B2422ADD400157F9A /* Customer.swift in Sources */,
 				BD3D10A62421D26F00614770 /* Vehicle.swift in Sources */,
 				BD3D10B92421D3B200614770 /* Float+Extensions.swift in Sources */,
 				BD3D10A12421D1CC00614770 /* TypeNameProtocol.swift in Sources */,
-				BD3D10922421D04900614770 /* Contact.swift in Sources */,
-				BD3D10902421CF4800614770 /* Person.swift in Sources */,
 				BD3D10A32421D1EB00614770 /* OutputStream.swift in Sources */,
+				BD91E11F2422ADDF00157F9A /* Contact.swift in Sources */,
+				BD91E1232422ADED00157F9A /* Owner.swift in Sources */,
 				BDC29ED52420A10200CC26E4 /* SceneDelegate.swift in Sources */,
 				BD3D108B2420C20400614770 /* SignUpViewController.swift in Sources */,
 				BD3D10A82421D28800614770 /* Car.swift in Sources */,
 				BD3D10BB2421D3E100614770 /* Date+Extensions.swift in Sources */,
+				BD91E11D2422ADDA00157F9A /* Address.swift in Sources */,
 				BD3D10AE2421D2D900614770 /* MotorCycle.swift in Sources */,
-				BD3D10982421D0AB00614770 /* Gender.swift in Sources */,
 				BD3D10B72421D39200614770 /* String+Extensions.swift in Sources */,
+				BD91E1212422ADE300157F9A /* Driver.swift in Sources */,
 				BD3D109F2421D19900614770 /* ObjectManager.swift in Sources */,
+				BD91E1192422ADC900157F9A /* Person.swift in Sources */,
 				BD3D10B42421D36700614770 /* Validations.swift in Sources */,
 				BD3D109D2421D19300614770 /* CustomFileHandler.swift in Sources */,
 			);

@@ -16,13 +16,11 @@ class Person
      var contact: Contact
      var salt: String
     
-    init(id: String, firstName: String, lastName: String, gender: Gender,birthDate: Date?, userName: String, password: String, contact: Contact) {
+    init(id: String, fullName: String, gender: Gender, password: String, contact: Contact)
+    {
         self.id = id
-        self.firstName = firstName
-        self.lastName = lastName
+        self.fullName= fullName
         self.gender = gender
-        self.birthDate = birthDate
-        self.userName = userName
         self.contact = contact
         self.salt = PasswordUtil.getSalt()
         self.password = PasswordUtil.getHashedPassword(salt: self.salt, plainPassword: password)

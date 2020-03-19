@@ -190,6 +190,9 @@
                                 <state key="normal" title="CUSTOMERS">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="GSu-8x-iNA" kind="show" id="UMs-0d-Lus"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -199,6 +202,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7fD-na-qr2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3453.6231884057975" y="-361.60714285714283"/>
+        </scene>
+        <!--Customer View Controller-->
+        <scene sceneID="Sbv-Aw-tHv">
+            <objects>
+                <viewController id="GSu-8x-iNA" customClass="CustomerViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c72-GK-18f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PDb-Im-MLt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eeo-Dh-BmE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BOY-od-9r0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4381" y="-1045"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="JxY-h3-Q47">

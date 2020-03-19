@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD09D0B8242349B5000294F8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09D0B7242349B5000294F8 /* SignUpViewController.swift */; };
 		BD09D0BA24234C23000294F8 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09D0B924234C23000294F8 /* PersonDetailViewController.swift */; };
+		BD09D0BC24241E13000294F8 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09D0BB24241E13000294F8 /* CustomerViewController.swift */; };
 		BD3D10882420B7D100614770 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10872420B7D100614770 /* LoginViewController.swift */; };
 		BD3D109B2421D16A00614770 /* PasswordUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D109A2421D16A00614770 /* PasswordUtil.swift */; };
 		BD3D109D2421D19300614770 /* CustomFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D109C2421D19300614770 /* CustomFileHandler.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		BD09D0B7242349B5000294F8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BD09D0B924234C23000294F8 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		BD09D0BB24241E13000294F8 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		BD3D10872420B7D100614770 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD3D109A2421D16A00614770 /* PasswordUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordUtil.swift; sourceTree = "<group>"; };
 		BD3D109C2421D19300614770 /* CustomFileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFileHandler.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				BD3D10872420B7D100614770 /* LoginViewController.swift */,
 				BD09D0B7242349B5000294F8 /* SignUpViewController.swift */,
 				BD09D0B924234C23000294F8 /* PersonDetailViewController.swift */,
+				BD09D0BB24241E13000294F8 /* CustomerViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				BD3D10A62421D26F00614770 /* Vehicle.swift in Sources */,
 				BD3D10B92421D3B200614770 /* Float+Extensions.swift in Sources */,
 				BD3D10A12421D1CC00614770 /* TypeNameProtocol.swift in Sources */,
+				BD09D0BC24241E13000294F8 /* CustomerViewController.swift in Sources */,
 				BD3D10A32421D1EB00614770 /* OutputStream.swift in Sources */,
 				BD91E11F2422ADDF00157F9A /* Contact.swift in Sources */,
 				BD91E1232422ADED00157F9A /* Owner.swift in Sources */,

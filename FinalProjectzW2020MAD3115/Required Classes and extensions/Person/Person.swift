@@ -22,8 +22,9 @@ class Person : TypeName
      var contact: Contact
      var salt: String
     
-    init(fullName: String, gender: Gender,birthDate: Date?, email: String, password: String, contact: Contact)
+    init(fullName: String, gender: Gender,birthDate: Date?, email: String, password: String, contact: Contact, id: String)
     {
+        self.id = id
         self.fullName = fullName
         self.gender = gender
         self.birthDate = birthDate

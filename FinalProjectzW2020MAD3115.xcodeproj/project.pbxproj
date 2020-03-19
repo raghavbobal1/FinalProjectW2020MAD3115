@@ -10,6 +10,7 @@
 		BD09D0B8242349B5000294F8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09D0B7242349B5000294F8 /* SignUpViewController.swift */; };
 		BD09D0BA24234C23000294F8 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09D0B924234C23000294F8 /* PersonDetailViewController.swift */; };
 		BD09D0BC24241E13000294F8 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09D0BB24241E13000294F8 /* CustomerViewController.swift */; };
+		BD09D0BE24241E86000294F8 /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09D0BD24241E86000294F8 /* DriverViewController.swift */; };
 		BD3D10882420B7D100614770 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10872420B7D100614770 /* LoginViewController.swift */; };
 		BD3D109B2421D16A00614770 /* PasswordUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D109A2421D16A00614770 /* PasswordUtil.swift */; };
 		BD3D109D2421D19300614770 /* CustomFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D109C2421D19300614770 /* CustomFileHandler.swift */; };
@@ -27,6 +28,7 @@
 		BD3D10BB2421D3E100614770 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10BA2421D3E100614770 /* Date+Extensions.swift */; };
 		BD3D10C12421D75600614770 /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D10C02421D75600614770 /* VehicleRent.swift */; };
 		BD3D10C32421D91300614770 /* JSONfiles in Resources */ = {isa = PBXBuildFile; fileRef = BD3D10C22421D91300614770 /* JSONfiles */; };
+		BD68D6B424241F54001DF318 /* OwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD68D6B324241F54001DF318 /* OwnerViewController.swift */; };
 		BD91E1192422ADC900157F9A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91E1182422ADC900157F9A /* Person.swift */; };
 		BD91E11B2422ADD400157F9A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91E11A2422ADD400157F9A /* Customer.swift */; };
 		BD91E11D2422ADDA00157F9A /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD91E11C2422ADDA00157F9A /* Address.swift */; };
@@ -47,6 +49,7 @@
 		BD09D0B7242349B5000294F8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BD09D0B924234C23000294F8 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		BD09D0BB24241E13000294F8 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
+		BD09D0BD24241E86000294F8 /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
 		BD3D10872420B7D100614770 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD3D109A2421D16A00614770 /* PasswordUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordUtil.swift; sourceTree = "<group>"; };
 		BD3D109C2421D19300614770 /* CustomFileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFileHandler.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		BD3D10BA2421D3E100614770 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		BD3D10C02421D75600614770 /* VehicleRent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
 		BD3D10C22421D91300614770 /* JSONfiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JSONfiles; sourceTree = "<group>"; };
+		BD68D6B324241F54001DF318 /* OwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewController.swift; sourceTree = "<group>"; };
 		BD91E1182422ADC900157F9A /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BD91E11A2422ADD400157F9A /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		BD91E11C2422ADDA00157F9A /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				BD3D10872420B7D100614770 /* LoginViewController.swift */,
 				BD09D0B7242349B5000294F8 /* SignUpViewController.swift */,
 				BD09D0B924234C23000294F8 /* PersonDetailViewController.swift */,
+				BD09D0BD24241E86000294F8 /* DriverViewController.swift */,
+				BD68D6B324241F54001DF318 /* OwnerViewController.swift */,
 				BD09D0BB24241E13000294F8 /* CustomerViewController.swift */,
 			);
 			path = "View Controllers";
@@ -296,6 +302,7 @@
 				BD91E11F2422ADDF00157F9A /* Contact.swift in Sources */,
 				BD91E1232422ADED00157F9A /* Owner.swift in Sources */,
 				BDC29ED52420A10200CC26E4 /* SceneDelegate.swift in Sources */,
+				BD09D0BE24241E86000294F8 /* DriverViewController.swift in Sources */,
 				BD3D10A82421D28800614770 /* Car.swift in Sources */,
 				BD3D10BB2421D3E100614770 /* Date+Extensions.swift in Sources */,
 				BD91E11D2422ADDA00157F9A /* Address.swift in Sources */,
@@ -308,6 +315,7 @@
 				BD3D109F2421D19900614770 /* ObjectManager.swift in Sources */,
 				BD91E1192422ADC900157F9A /* Person.swift in Sources */,
 				BD3D10B42421D36700614770 /* Validations.swift in Sources */,
+				BD68D6B424241F54001DF318 /* OwnerViewController.swift in Sources */,
 				BD3D109D2421D19300614770 /* CustomFileHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

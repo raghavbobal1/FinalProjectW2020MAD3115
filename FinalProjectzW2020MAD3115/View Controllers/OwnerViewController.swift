@@ -1,5 +1,5 @@
 //
-//  CustomerViewController.swift
+//  OwnerViewController.swift
 //  FinalProjectzW2020MAD3115
 //
 //  Created by Raghav Bobal on 2020-03-19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomerViewController: UIViewController
+class OwnerViewController: UIViewController
 {
 
     override func viewDidLoad()
@@ -20,5 +20,5 @@ class CustomerViewController: UIViewController
     {
         navigationController?.popViewController(animated: true)
     }
-    
+
 }

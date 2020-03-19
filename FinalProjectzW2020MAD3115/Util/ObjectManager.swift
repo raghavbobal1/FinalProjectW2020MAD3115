@@ -58,16 +58,16 @@ struct ObjectManager{
         
         return nil
     }
-    
-    func getPersonById( id: String, typeName: String = Customer.typeSName) -> Person? {
-        let personObjs = ObjectManager.personObjects[typeName] ?? []
-        for person in personObjs{
-            if person.id == id && (person.typeName == typeName || typeName == "all"){
-                return person
-            }
-        }
-        return nil
-    }
+//    
+//    func getPersonById( id: String, typeName: String = Customer.typeSName) -> Person? {
+//        let personObjs = ObjectManager.personObjects[typeName] ?? []
+//        for person in personObjs{
+//            if person.id == id && (person.typeName == typeName || typeName == "all"){
+//                return person
+//            }
+//        }
+//        return nil
+//    }
     
     func getRentById( id: String) -> VehicleRent? {
         for rent in ObjectManager.rentObjects{

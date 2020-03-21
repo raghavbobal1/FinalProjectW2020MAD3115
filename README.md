@@ -11,3 +11,6 @@ Our project is a vehicle renting system which contains a detailed list of custom
 
 ## PROJECT STRUCTURE
 <img src="https://i93.servimg.com/u/f93/18/45/29/87/struct10.jpg" alt="Class hierarchy" style="float: left; margin-right: 10px;"/>
+
+## REFERENCES
+* [Swift Developer Blog](http://swiftdeveloperblog.com/code-examples/validate-email-address-code-example-in-swift/) - For validating the email of customers.

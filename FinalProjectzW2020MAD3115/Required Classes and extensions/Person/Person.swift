@@ -12,7 +12,7 @@ import Foundation
 
 class Person : TypeName
 {
-     
+     var id: String
      var fullName: String
      var gender: Gender
      var birthDate: Date?
@@ -22,9 +22,9 @@ class Person : TypeName
      var contact: Contact
      var salt: String
     
-    init(fullName: String, gender: Gender,birthDate: Date?, email: String, password: String, contact: Contact)
+    init(id: String,fullName: String, gender: Gender,birthDate: Date?, email: String, password: String, contact: Contact)
     {
-      
+        self.id = id
         self.fullName = fullName
         self.gender = gender
         self.birthDate = birthDate

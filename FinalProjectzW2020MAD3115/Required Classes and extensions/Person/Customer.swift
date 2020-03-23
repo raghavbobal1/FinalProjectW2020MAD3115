@@ -25,9 +25,9 @@ class Customer : Person
         
     }
 
-    init(fullName: String,gender: Gender,birthDate: Date?,age:Int, email: String, password: String, contact: Contact)
+    init(id: String,fullName: String,gender: Gender,birthDate: Date?,age:Int, email: String, password: String, contact: Contact)
     {
-        super.init(fullName: fullName, gender: gender, birthDate: birthDate, email: email, password: password, contact: contact)
+        super.init(id: id, fullName: fullName, gender: gender, birthDate: birthDate, email: email, password: password, contact: contact)
     }
  
 

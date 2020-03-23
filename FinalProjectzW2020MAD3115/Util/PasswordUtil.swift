@@ -20,7 +20,8 @@ struct PasswordUtil
         return salt + plainPassword
     }
 
-    static func validate(salt: String, hashedPassword: String, userInputPassword: String) -> Bool{
+    static func validate(salt: String, hashedPassword: String, userInputPassword: String) -> Bool
+    {
         return getHashedPassword(salt: salt, plainPassword: userInputPassword) == hashedPassword
     }
 }

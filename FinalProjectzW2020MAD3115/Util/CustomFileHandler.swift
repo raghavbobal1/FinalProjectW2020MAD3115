@@ -9,31 +9,38 @@
 import Foundation
 
 
-struct CustomFileHandler {
+struct CustomFileHandler
+{
     var fileName: String
     var filePath: URL
      
-    init(fileName: String, filePath: URL = URL(fileURLWithPath: ".")) {
+    init(fileName: String, filePath: URL = URL(fileURLWithPath: "."))
+    {
         self.fileName = fileName
         self.filePath = filePath
-        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        {
             self.filePath = dir.appendingPathComponent(fileName)
         }
     }
     
-    func read() -> [[String: Any]]? {
+    func read() -> [[String: Any]]?
+    {
         let filepPath = Bundle.main.url(forResource: fileName, withExtension: "json")
-        guard let path = filepPath else {
+        guard let path = filepPath else
+        {
             print("Invalid File path found")
             return nil
         }
         
-        guard let data = try? Data(contentsOf: path) else {
+        guard let data = try? Data(contentsOf: path) else
+        {
             print("Error while read Data from URL")
             return nil
         }
         
-        guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else {
+        guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else
+        {
             print("Error while reading JSON Data from file")
             return nil
         }
@@ -50,12 +57,15 @@ struct CustomFileHandler {
     }
     
     
-    mutating  func write(text: String){
+    mutating  func write(text: String)
+    {
         
-        do{
-            try text.write(to: self.filePath, atomically: false, encoding: .utf8)
+        do
+        {
+          try text.write(to: self.filePath, atomically: false, encoding: .utf8)
         }
-        catch {
+        catch
+        {
             print("Error occured while writing to file")
             let nsError = error as NSError
             print(nsError.localizedDescription)

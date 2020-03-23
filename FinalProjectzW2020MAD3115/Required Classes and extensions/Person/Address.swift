@@ -24,5 +24,4 @@ public class Address
         self.pincode = pincode
         self.streetName = streetName
     }
-
 }

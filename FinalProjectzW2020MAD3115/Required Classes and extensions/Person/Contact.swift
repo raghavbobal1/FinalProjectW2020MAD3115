@@ -14,13 +14,12 @@ public class Contact
 {
     private var mobileNumber: String
     private var emailId: String
-    private var address: Address
-    
+    private var address: Address?
     
     /* Function to validate the email id */
     
     public func isValid(emailAddressString: String) -> Bool
-     {
+{
          var returnValue = true
          let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
     do
@@ -41,8 +40,7 @@ public class Contact
      }
      
      return  returnValue
-     }
-
+}
     
     internal init(mobileNumber: String, emailId: String, address: Address) throws
     {
@@ -53,15 +51,18 @@ public class Contact
         self.mobileNumber = mobileNumber
     }
     
-    convenience init(contactDict: [String: String], address: Address) throws {
+    convenience init(contactDict: [String: String], address: Address) throws
+    {
         
-        guard let mobileNumber = contactDict["mobileNumber"] else {
+        guard let mobileNumber = contactDict["mobileNumber"] else
+        {
                    throw JsonValidationError.isNotValidInput(
                        className: String(describing:type(of: self)),
                        memberName: "mobileNumber")
-               }
+        }
         
-        guard let emailId = contactDict["emailId"] else {
+        guard let emailId = contactDict["emailId"] else
+        {
             throw JsonValidationError.isNotValidInput(
                 className: String(describing:type(of: self)),
                 memberName: "emailId")
@@ -69,7 +70,5 @@ public class Contact
         
         try self.init(mobileNumber: mobileNumber, emailId: emailId, address: address)
     }
-
-        
 }
 

@@ -17,3 +17,4 @@ Our project is a vehicle renting system which contains a detailed list of custom
 * [Jsonplaceholder](https://jsonplaceholder.typicode.com/) - JSON reference
 * [HackingWithSwift](https://www.hackingwithswift.com/example-code/system/how-to-parse-json-using-jsonserialization) - Used to implement json file reading
 * [Knowlegde Stack](http://www.knowstack.com/swift-nsdateformatter/) - Reference for age calculation from birthdate
+* [Tutlane](https://www.tutlane.com/tutorial/ios/ios-tutorial) - Basic reference for building iOS apps

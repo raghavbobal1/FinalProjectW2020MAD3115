@@ -12,6 +12,46 @@ Our project is a vehicle renting system which contains a detailed list of custom
 ## PROJECT STRUCTURE
 <img src="https://i93.servimg.com/u/f93/18/45/29/87/struct10.jpg" alt="Class hierarchy" style="float: left; margin-right: 10px;"/>
 
+We have used the following packages and classes to implement the above given structure:<br>
+
+### *View Controllers* <br>
+* **TBD**
+
+### *Person Group*<br>
+* **Person Class**: Abstract class containing attributes to be inherited by Customer, Driver and Owner Classes
+* **Customer Class**: Holds details of customer as well as the vehicles they have rented
+* **Driver Class**: Holds information about the drivers that are available
+* **Owner Class**: Holds information about owners and the vehicles they own
+* **Gender Class**: Enum class to hold gender (Male, Female, Other)
+* **Contact Class**: Stores all contact information about a person
+* **Address Class**: Class containing address information used in MainRunner
+
+### *Vehicles Group*<br>
+* **Vehicle Class**: Abstract class containing attributes to be inherited by Bus, Car, MotorCycle
+* **Car Class**: Contains attributes inherited from Vehicle as well as carColor and carType
+* **Bus Class**: Contains attributes inherited from Vehicle as well as busType, wifi and accessibility services
+* **MotorCycle Class**: Contains attributes inherited from Vehicle as well as mileage and topSpeed
+* **FuelType Class**: Enum class to hold the type of fuel used (Petrol, Diesel, Electric)
+
+### *Json Group*<br>
+* Contains the json data for the classes
+
+### *Utility Group*<br>
+* **IDisplay Class**: Interface containing one method public void display()
+* **Calculation Class**: Used in age calculation
+* **FileHandler**: Used to handle the json files
+* **PasswordUtil**: Contains methods for encryption and decryption
+
+### *Extensions Group*
+* **String+Extension**: Contains method for date formatting
+* **Float+Extension**: Contains method to format price
+
+### *Exceptions Group*
+* Contains validations for json handling as well as verification of email address and phone numbers
+
+### *Others*
+* **VehicleRent Class**: Contains renting information
+
 ## REFERENCES
 * [Swift Developer Blog](http://swiftdeveloperblog.com/code-examples/validate-email-address-code-example-in-swift/) - For validating the email of customers.
 * [Jsonplaceholder](https://jsonplaceholder.typicode.com/) - JSON reference

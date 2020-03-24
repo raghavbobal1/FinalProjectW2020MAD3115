@@ -1,4 +1,6 @@
-# FinalProjectW2020MAD3115
+# FinalProjectW2020MAD3115 
+
+<p align="center" ><img src="https://i93.servimg.com/u/f93/18/45/29/87/logo10.png" alt="projectlogo" style="float: center; margin-right: 10px;"/></p>
 
 ## PROJECT CONTRIBUTORS
 

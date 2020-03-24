@@ -14,8 +14,9 @@ Our project is a vehicle renting system which contains a detailed list of custom
 
 We have used the following packages and classes to implement the above given structure:<br>
 
-### *View Controllers* <br>
-* **TBD**
+### *View Controllers Group* <br>
+* **LoginViewController**: VC that allows a customer to login with his credentials
+* **SignUpViewController**: VC containing new customer addition
 
 ### *Person Group*<br>
 * **Person Class**: Abstract class containing attributes to be inherited by Customer, Driver and Owner Classes

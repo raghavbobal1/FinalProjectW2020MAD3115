@@ -19,6 +19,9 @@ We have used the following packages and classes to implement the above given str
 ### *View Controllers Group* <br>
 * **LoginViewController**: VC that allows a customer to login with his credentials
 * **SignUpViewController**: VC containing new customer addition
+* **DriverViewController**: VC containing driver information
+* **CustomerViewController**: VC containing  customer information
+* **OwnerViewController**: VC containing owner information
 
 ### *Person Group*<br>
 * **Person Class**: Abstract class containing attributes to be inherited by Customer, Driver and Owner Classes

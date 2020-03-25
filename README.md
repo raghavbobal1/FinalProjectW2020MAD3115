@@ -22,6 +22,7 @@ We have used the following packages and classes to implement the above given str
 * **DriverViewController**: VC containing driver information
 * **CustomerViewController**: VC containing  customer information
 * **OwnerViewController**: VC containing owner information
+* **PersonDetaiLViewController**: VC containing detailed information about a specific type of user
 
 ### *Person Group*<br>
 * **Person Class**: Abstract class containing attributes to be inherited by Customer, Driver and Owner Classes

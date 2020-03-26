@@ -24,4 +24,25 @@ class MotorCycle: Vehicle
     super.init(vehicleId: vehicleId, description: description, manufacturer: manufacturer, fuelType: fuelType, isSelfDrive: isSelfDrive, isInsured: isInsured, insuranceProviderName: insuranceProviderName, numberOfSeat: numberOfSeat, baseRate: baseRate, perKmRate: perKmRate, driver: driver)
   }
     
+   init(motorCycleDict: [String: Any]) throws {
+        
+        guard let topSpeed = motorCycleDict["topSpeed"] as? Int else {
+            throw JsonValidationError.isNotValidInput(
+                className: String(describing:type(of: self)),
+                memberName: "topSpeed")
+        }
+        
+        guard let mileage = motorCycleDict["mileage"] as? Int else {
+            throw JsonValidationError.isNotValidInput(
+                className: String(describing:type(of: self)),
+                memberName: "mileage")
+        }
+        self.topSpeed = topSpeed
+        self.mileage = mileage
+    
+        try super.init(vehicleDict: motorCycleDict)
+        
+    }
+    
+  
 }

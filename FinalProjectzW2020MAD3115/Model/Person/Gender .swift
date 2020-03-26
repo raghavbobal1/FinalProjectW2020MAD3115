@@ -9,7 +9,7 @@
 import Foundation
 //Gender enum to specify genders for persons
 
-public enum Gender
+public enum Gender: CaseIterable
 {
     case MALE,FEMALE,OTHER
     
@@ -24,3 +24,4 @@ public enum Gender
         }
     }
 }
+

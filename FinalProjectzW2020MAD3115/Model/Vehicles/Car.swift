@@ -22,5 +22,26 @@ class Car: Vehicle
                fuelType: fuelType, isSelfDrive: isSelfDrive, isInsured: isInsured, insuranceProviderName: insuranceProviderName, numberOfSeat: numberOfSeat, baseRate: baseRate, perKmRate: perKmRate, driver: driver)
     
   }
-   
+    
+   init(carDict: [String: Any]) throws {
+        
+    guard let carType = carDict["carType"] as? String else {
+         throw JsonValidationError.isNotValidInput(
+             className: String(describing:type(of: self)),
+             memberName: "carType")
+     }
+     
+     guard let carColor = carDict["carColor"] as? String else {
+         throw JsonValidationError.isNotValidInput(
+             className: String(describing:type(of: self)),
+             memberName: "carColor")
+     }
+    self.carType=carType
+    self.carColor=carColor
+    try super.init(vehicleDict: carDict)
+        
+    }
+    
+  
+    
 }

@@ -1,28 +1,27 @@
 //
 //  PasswordUtil.swift
-//  RenterProjectW2020MAD3004
+//  C0773839_MidTerm_MAD3115W2020
 //
-//  Created by Raghav Bobal on 2020-02-20.
+//  Created by Prakash on 2020-03-04.
 //  Copyright © 2020 com.lambton. All rights reserved.
 //
 
 import Foundation
 
-struct PasswordUtil
 
-{
-    static private let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+struct PasswordUtil {
+    
+    static var randomStr = "12344564576zxfdfsdfasdca"
     static func getSalt() -> String{
-        return String((0..<10).map{ _ in PasswordUtil.letters.randomElement()! })
+        return PasswordUtil.randomStr
     }
     
-    static func getHashedPassword(salt: String, plainPassword: String) ->  String{
-        return salt + plainPassword
+    static func getHashedPassword(plainPassword: String, salt: String) -> String{
+        return plainPassword + salt
     }
-
-    static func validate(salt: String, hashedPassword: String, userInputPassword: String) -> Bool
-    {
-        return getHashedPassword(salt: salt, plainPassword: userInputPassword) == hashedPassword
+    
+    static func validate(plainPassword: String, salt: String, hashPassword: String) -> Bool{
+        return getHashedPassword(plainPassword: plainPassword, salt: salt) ==  hashPassword
     }
+    
 }
-

@@ -22,5 +22,11 @@ class HomePageViewController: UIViewController
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
+    @IBAction func btnLogin(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                       let selectorView = storyboard.instantiateViewController(identifier: "LoginViewController") as  LoginViewController
+                          
+                          self.navigationController?.pushViewController(selectorView, animated: true)
+    }
 }
 

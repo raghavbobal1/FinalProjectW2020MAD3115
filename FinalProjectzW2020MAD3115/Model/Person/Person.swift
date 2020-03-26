@@ -35,7 +35,7 @@ class Person :  TypeName
         self.userName = userName
         self.contact = contact
         self.salt = PasswordUtil.getSalt()
-        self.password = PasswordUtil.getHashedPassword(salt: self.salt, plainPassword: password)
+        self.password = PasswordUtil.getHashedPassword(plainPassword: password, salt: self.salt)
     }
     
     
@@ -123,7 +123,7 @@ class Person :  TypeName
         self.userName = userName
         self.contact = contact!
         self.salt = PasswordUtil.getSalt()
-        self.password = PasswordUtil.getHashedPassword(salt: self.salt, plainPassword: password)
+        self.password = PasswordUtil.getHashedPassword(plainPassword: password, salt: self.salt)
         
     }
     

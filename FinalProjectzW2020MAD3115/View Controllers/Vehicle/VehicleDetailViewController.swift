@@ -10,7 +10,6 @@ import UIKit
 
 class VehicleDetailViewController: UIViewController {
 
-    @IBOutlet weak var labelVehicleId: UILabel!
     var vehicle:Vehicle?
     var type: String = ""
     override func viewDidLoad() {
@@ -20,7 +19,6 @@ class VehicleDetailViewController: UIViewController {
         guard let vehicle = self.vehicle else {
                    return
                }
-       self.labelVehicleId.text = vehicle.vehicleId
     }
     
 

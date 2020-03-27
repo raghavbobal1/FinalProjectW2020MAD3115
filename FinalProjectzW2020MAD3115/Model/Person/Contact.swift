@@ -14,7 +14,7 @@ public class Contact
 {
     private var mobileNumber: String
     private var emailId: String
-    private var address: Address
+    private var address: Address?
     
     
     /* Function to validate the email id */
@@ -44,7 +44,7 @@ public class Contact
      }
 
     
-    internal init(mobileNumber: String, emailId: String, address: Address) throws
+    internal init(mobileNumber: String, emailId: String, address: Address?) throws
     {
         try Validations.email(email: emailId)
         try Validations.mobileNumber(number: mobileNumber)
@@ -53,7 +53,7 @@ public class Contact
         self.mobileNumber = mobileNumber
     }
     
-    convenience init(contactDict: [String: String], address: Address) throws {
+    convenience init(contactDict: [String: String], address: Address?) throws {
         
         guard let mobileNumber = contactDict["mobileNumber"] else {
                    throw JsonValidationError.isNotValidInput(

@@ -30,9 +30,9 @@ extension UITextField
         
         color.toValue = selectedColor
         
-        color.duration = 0.7
+        color.duration = 2
         color.repeatCount = 1
-
+        
         self.layer.borderColor =  selectedColor.cgColor
         
         if selectedColor == UIColor.black{

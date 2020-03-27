@@ -47,10 +47,74 @@ class AddPersonViewController: UIViewController {
         //view.endEditing(true)
     }
     
+    func defaultConfigLoad() {
+        
+        self.textEmail.animateToColor(selectedColor: UIColor.black)
+        
+        
+        self.textPhoneNumber.animateToColor(selectedColor: UIColor.black)
+        
+        self.textFirstName.animateToColor(selectedColor: UIColor.black)
+
+        
+
+    }
+    
     @IBAction func btnSaveDown(_ sender: Any) {
+        self.defaultConfigLoad()
+        let firstName = self.textFirstName.text!
+               
+       if firstName.isEmpty {
+        self.view.showToast(toastMessage: "FirstName can't be Empty", duration: 1)
+            self.textFirstName.animateToColor(selectedColor: UIColor.red)
+           return
+       }
+       let lastName = self.textLastName.text!
     
-    
-    
+        
+        // Create contact and handle errors
+        let email = self.textEmail.text!
+        let phoneNumber = self.textPhoneNumber.text!
+        
+        var contact :Contact? = nil
+        do{
+            contact = try Contact(mobileNumber: phoneNumber , emailId: email, address: nil)
+        }
+        catch EmailValidationError.isEmpty(let email){
+            self.view.showToast(toastMessage: "Email can't be Empty", duration: 1.3)
+            self.textEmail.animateToColor(selectedColor: UIColor.red)
+            return
+        }
+        catch EmailValidationError.isNotValidEmail(let email){
+            self.view.showToast(toastMessage: "Email Invalid format", duration: 1.3)
+            self.textEmail.animateToColor(selectedColor: UIColor.red)
+
+            return
+        }
+        catch EmailValidationError.isNotValidLength(let email){
+            self.view.showToast(toastMessage: "Email not valid length", duration: 1.3)
+            self.textEmail.animateToColor(selectedColor: UIColor.red)
+            return
+        }
+        catch PhoneNumberValidationError.voiletsMaxLength(let number){
+            self.view.showToast(toastMessage: "Phonenumber's length should be less than 17", duration: 1.3)
+            self.textPhoneNumber.animateToColor(selectedColor: UIColor.red)
+            return
+        }
+        catch PhoneNumberValidationError.voiletsMinLength(let number){
+            self.view.showToast(toastMessage: "Phone number must be longer than 6", duration: 1.3)
+            self.textPhoneNumber.animateToColor(selectedColor: UIColor.red)
+            return
+        }
+        catch{
+            let alertController = UIAlertController(title: "Error", message:
+                "Error in Email or PhoneNumber", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
+        
     
     }
     

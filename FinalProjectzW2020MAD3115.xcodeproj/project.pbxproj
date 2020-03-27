@@ -19,6 +19,7 @@
 		AB25883E242DCAB6000B3A5A /* RentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25883D242DCAB6000B3A5A /* RentDetailViewController.swift */; };
 		AB258840242DD344000B3A5A /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25883F242DD344000B3A5A /* UIButton+Extensions.swift */; };
 		AB258842242DD4DC000B3A5A /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258841242DD4DC000B3A5A /* AddPersonViewController.swift */; };
+		AB258844242DEE56000B3A5A /* UI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258843242DEE56000B3A5A /* UI+Extension.swift */; };
 		AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */; };
 		AB9998E0242D4652002E2E89 /* DriverData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998DF242D4652002E2E89 /* DriverData.json */; };
 		AB9998E2242D46C5002E2E89 /* CustomerData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998E1242D46C5002E2E89 /* CustomerData.json */; };
@@ -71,6 +72,7 @@
 		AB25883D242DCAB6000B3A5A /* RentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentDetailViewController.swift; sourceTree = "<group>"; };
 		AB25883F242DD344000B3A5A /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		AB258841242DD4DC000B3A5A /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
+		AB258843242DEE56000B3A5A /* UI+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+Extension.swift"; sourceTree = "<group>"; };
 		AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		AB9998DF242D4652002E2E89 /* DriverData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverData.json; sourceTree = "<group>"; };
 		AB9998E1242D46C5002E2E89 /* CustomerData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerData.json; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				BD3D10BA2421D3E100614770 /* Date+Extensions.swift */,
 				BD91E1262422BF6B00157F9A /* Extension+UITextField .swift */,
 				AB25883F242DD344000B3A5A /* UIButton+Extensions.swift */,
+				AB258843242DEE56000B3A5A /* UI+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				BD3D10AC2421D2B900614770 /* FuelType.swift in Sources */,
 				BDC29ED72420A10200CC26E4 /* HomePageViewController.swift in Sources */,
 				AB25883E242DCAB6000B3A5A /* RentDetailViewController.swift in Sources */,
+				AB258844242DEE56000B3A5A /* UI+Extension.swift in Sources */,
 				AB25882F242DB14E000B3A5A /* RentListViewController.swift in Sources */,
 				BD3D10C12421D75600614770 /* VehicleRent.swift in Sources */,
 				BDC29ED32420A10200CC26E4 /* AppDelegate.swift in Sources */,

@@ -48,9 +48,14 @@ class PersonListViewController: UIViewController {
     }
     
     @IBAction func btnAddDown(_ sender: Any) {
+        
+        
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vcStoryBoardId = "AddPersonViewController"
         var AddViewView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as! AddPersonViewController
+        
+        AddViewView.personType = currentType
          self.navigationController?.pushViewController(AddViewView, animated: true)
     
     }

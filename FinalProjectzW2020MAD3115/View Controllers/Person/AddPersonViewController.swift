@@ -9,14 +9,25 @@
 import UIKit
 
 class AddPersonViewController: UIViewController {
-
+    @IBOutlet weak var textFirstName: UITextField!
+    @IBOutlet weak var textLastName: UITextField!
+    
+    @IBOutlet weak var segmentGender: UISegmentedControl!
+    
+    @IBOutlet weak var textEmail: UITextField!
+    @IBOutlet weak var textPassword: UITextField!
+    @IBOutlet weak var textPhoneNumber: UITextField!
+    @IBOutlet weak var textBirthDate: UITextField!
+    var personType: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func btnSaveDown(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

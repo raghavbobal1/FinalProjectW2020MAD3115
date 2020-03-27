@@ -12,6 +12,7 @@ import UIKit
 class PersonCustomCell: UITableViewCell{
     
     @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var iamgeProfile: UIImageView!
     
 }
 
@@ -98,7 +99,18 @@ extension PersonListViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCell") as! PersonCustomCell
-        cell.labelName.text = valueArr[indexPath.row].firstName
+        cell.labelName.text = valueArr[indexPath.row].fullName
+//
+//        cell.profileImageView.image = UIImage(named: imageName)
+//
+//        cell.iamgeProfile.frame.size.height = 50
+//        cell.iamgeProfile.frame.size.width = 50
+        cell.iamgeProfile.layer.cornerRadius = cell.iamgeProfile.frame.size.width / 2
+        cell.iamgeProfile.layer.borderWidth = 2.0
+        
+        
+        cell.layer.borderWidth = 1.0
+        cell.layer.borderColor = CGColor(srgbRed: 0, green: 0.749, blue: 0.7882, alpha: 1.0)
         return cell
     }
     
@@ -128,6 +140,13 @@ extension PersonListViewController: UITableViewDataSource, UITableViewDelegate{
             detailView.driver = self.valueArr[indexPath.row]
             self.navigationController?.pushViewController(detailView, animated: true)
         }
+        
+        
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
         
     }
     

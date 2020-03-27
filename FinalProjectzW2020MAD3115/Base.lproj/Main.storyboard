@@ -646,21 +646,34 @@
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OB6-yU-zoR">
-                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OB6-yU-zoR">
+                                                    <rect key="frame" x="114" y="0.0" width="112" height="70"/>
                                                     <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="jQi-pn-RBD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="70" id="Eji-Il-kZ4"/>
+                                                                <constraint firstAttribute="width" constant="70" id="FSB-vw-BWh"/>
+                                                            </constraints>
+                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9X-xQ-Ihb">
-                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                            <rect key="frame" x="70" y="0.0" width="42" height="70"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="jQi-pn-RBD" firstAttribute="top" secondItem="OB6-yU-zoR" secondAttribute="top" constant="5" id="8Kc-Vq-O57"/>
+                                                        <constraint firstAttribute="bottom" secondItem="jQi-pn-RBD" secondAttribute="bottom" constant="5" id="RBT-c6-KSa"/>
+                                                        <constraint firstItem="U9X-xQ-Ihb" firstAttribute="leading" secondItem="jQi-pn-RBD" secondAttribute="trailing" constant="10" id="qry-bb-aSW"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="iamgeProfile" destination="jQi-pn-RBD" id="RYc-r5-B0Y"/>
                                             <outlet property="labelName" destination="U9X-xQ-Ihb" id="UHO-Ge-ahC"/>
                                         </connections>
                                     </tableViewCell>

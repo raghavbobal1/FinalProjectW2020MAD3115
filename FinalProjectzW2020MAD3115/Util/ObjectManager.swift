@@ -12,10 +12,10 @@ import Foundation
 struct ObjectManager{
     private init(){}
     
-    static var vehicleObjects = [String: [Vehicle]]()
-    static var personObjects = [String: [Person]]()
-    static var rentObjects = [VehicleRent]()
-    
+//    static var vehicleObjects = [String: [Vehicle]]()
+//    static var personObjects = [String: [Person]]()
+//    static var rentObjects = [VehicleRent]()
+//
     
     static var customerObjects = [String: Customer]()
     static var driverObjects = [String: Driver]()
@@ -186,17 +186,31 @@ struct ObjectManager{
 //    }
     
     func getPersonById( id: String, typeName: String = Customer.typeSName) -> Person? {
-        let personObjs = ObjectManager.personObjects[typeName] ?? []
-        for person in personObjs{
-            if person.id == id && (person.typeName == typeName || typeName == "all"){
-                return person
+        for(_, p) in ObjectManager.customerObjects{
+            if id == p.id{
+                return p
+            }
+        }
+        
+        for(_, p2) in ObjectManager.ownerObjects{
+            if id == p2.id{
+                return p2
+            }
+        }
+        
+        for(_, p3) in ObjectManager.driverObjects{
+            if id == p3.id{
+                return p3
             }
         }
         return nil
+        
+        
+        
     }
     
     func getRentById( id: String) -> VehicleRent? {
-        for rent in ObjectManager.rentObjects{
+        for (_,rent) in ObjectManager.vehicleRentObjects{
             if rent.id == id {
                 return rent
             }
@@ -234,24 +248,24 @@ struct ObjectManager{
     
     
     
-    func addObject(vehicle: Vehicle, typeName: String = Car.typeSName){
-        if ObjectManager.vehicleObjects[typeName] == nil {
-            ObjectManager.vehicleObjects.updateValue([Vehicle](), forKey: typeName)
-        }
-        ObjectManager.vehicleObjects[typeName]?.append(vehicle)
-    }
-    
-    func addObject(person: Person, typeName: String = Customer.typeSName){
-        if ObjectManager.personObjects[typeName] == nil {
-            ObjectManager.personObjects.updateValue([Person](), forKey: typeName)
-        }
-        ObjectManager.personObjects[typeName]?.append(person)
-    }
-    
-    func addObject(vehicleRent: VehicleRent){
-        ObjectManager.rentObjects.append(vehicleRent)
-    }
-    
+//    func addObject(vehicle: Vehicle, typeName: String = Car.typeSName){
+//        if ObjectManager.vehicleObjects[typeName] == nil {
+//            ObjectManager.vehicleObjects.updateValue([Vehicle](), forKey: typeName)
+//        }
+//        ObjectManager.vehicleObjects[typeName]?.append(vehicle)
+//    }
+//    
+//    func addObject(person: Person, typeName: String = Customer.typeSName){
+//        if ObjectManager.personObjects[typeName] == nil {
+//            ObjectManager.personObjects.updateValue([Person](), forKey: typeName)
+//        }
+//        ObjectManager.personObjects[typeName]?.append(person)
+//    }
+//    
+//    func addObject(vehicleRent: VehicleRent){
+//        ObjectManager.rentObjects.append(vehicleRent)
+//    }
+//    
    
     
     

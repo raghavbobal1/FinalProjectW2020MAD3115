@@ -51,7 +51,9 @@ class Customer : Person
     }
     
     
-   
+    func getVehicleRents() -> [VehicleRent]{
+        return Array(self.vehicleRents.values)
+    }
     
    
     

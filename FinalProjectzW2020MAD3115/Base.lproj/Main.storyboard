@@ -889,7 +889,7 @@
                                 <rect key="frame" x="10" y="448" width="394" height="414"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="E42-xA-qT5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomerDetailRentCell" id="E42-xA-qT5">
                                         <rect key="frame" x="0.0" y="28" width="394" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E42-xA-qT5" id="Bd4-UM-5JK">
@@ -2369,8 +2369,8 @@
         <image name="BackButtonLogo" width="1200" height="630"/>
         <image name="LoginPageLogo" width="500" height="750"/>
         <image name="SignUpPageLogo" width="500" height="750"/>
-        <image name="calendar" width="512" height="512"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
+        <image name="calendar" width="512" height="512"/>
         <image name="company" width="40" height="40"/>
         <image name="dot.square" catalog="system" width="64" height="56"/>
         <image name="eye.slash" catalog="system" width="64" height="42"/>

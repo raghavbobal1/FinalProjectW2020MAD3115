@@ -16,11 +16,28 @@ class PersonCustomCell: UITableViewCell{
 }
 
 class PersonListViewController: UIViewController {
-
+    
+    @IBOutlet weak var personTable: UITableView!
+    var valueArr: [Person] = Array(ObjectManager.customerObjects.values)
+    
+    @IBOutlet weak var personSegment: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        personSegment.addTarget(self, action: #selector(handleSegmentChange), for: .valueChanged)
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func handleSegmentChange()  {
+        switch personSegment.selectedSegmentIndex {
+        case 0:
+            valueArr = Array(ObjectManager.customerObjects.values)
+        case 1:
+            valueArr = Array(ObjectManager.ownerObjects.values)
+        default:
+            valueArr = Array(ObjectManager.driverObjects.values)
+        }
+        self.personTable.reloadData()
     }
     
 
@@ -38,12 +55,12 @@ class PersonListViewController: UIViewController {
 
 extension PersonListViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ObjectManager.customerObjects.values.count
+        return valueArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCell") as! PersonCustomCell
-        cell.labelName.text = Array(ObjectManager.customerObjects.values)[indexPath.row].firstName
+        cell.labelName.text = valueArr[indexPath.row].firstName
         return cell
     }
     

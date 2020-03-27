@@ -344,10 +344,10 @@
             </objects>
             <point key="canvasLocation" x="9959.4202898550739" y="1903.7946428571427"/>
         </scene>
-        <!--View Controller-->
+        <!--Rent Detail View Controller-->
         <scene sceneID="Om8-ny-mXY">
             <objects>
-                <viewController id="ugk-Fy-asO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RentDetailViewController" id="ugk-Fy-asO" customClass="RentDetailViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c2y-TT-uus">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -363,10 +363,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XjL-J2-Tj9"/>
                     </view>
+                    <connections>
+                        <outlet property="labelRentId" destination="Ib4-FD-L2n" id="2Eq-6L-zub"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JS9-Lc-8OJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8042.0289855072469" y="2722.7678571428569"/>
+            <point key="canvasLocation" x="9764" y="2744"/>
         </scene>
         <!--Vehicle List View Controller-->
         <scene sceneID="lYZ-MA-nA1">
@@ -489,6 +492,11 @@
                                     <outlet property="delegate" destination="HgN-Dm-niK" id="4qt-Pu-YFJ"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a2d-bt-BAl">
+                                <rect key="frame" x="315" y="718" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="plus"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -504,6 +512,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7FQ-jB-sPU"/>
                     <connections>
+                        <outlet property="btnAdd" destination="a2d-bt-BAl" id="LbG-x3-QuB"/>
                         <outlet property="personSegment" destination="L7v-wX-EgF" id="ye9-XK-9kA"/>
                         <outlet property="personTable" destination="FzX-ep-ONR" id="7Ty-qZ-4ZL"/>
                     </connections>
@@ -724,6 +733,7 @@
         <image name="SignUpPageLogo" width="500" height="750"/>
         <image name="homepagelogo" width="3923" height="3704"/>
         <image name="person" width="40" height="40"/>
+        <image name="plus" width="30" height="30"/>
         <image name="rent" width="40" height="40"/>
         <image name="vehicle" width="40" height="40"/>
     </resources>

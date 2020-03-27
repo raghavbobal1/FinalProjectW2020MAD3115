@@ -21,11 +21,14 @@ class PersonListViewController: UIViewController {
     var valueArr: [Person] = Array(ObjectManager.customerObjects.values)
     var currentType =  Customer.typeSName
     
+    @IBOutlet weak var btnAdd: UIButton!
     @IBOutlet weak var personSegment: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         personSegment.addTarget(self, action: #selector(handleSegmentChange), for: .valueChanged)
+        self.btnAdd.makeFloating()
+        
         // Do any additional setup after loading the view.
     }
     

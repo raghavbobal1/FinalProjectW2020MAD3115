@@ -59,6 +59,18 @@ extension RentListViewController: UITableViewDataSource, UITableViewDelegate{
         func numberOfSections(in tableView: UITableView) -> Int {
             return 1
         }
-
+    
+    
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+               
+                   
+                   let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                   let vcStoryBoardId = "RentDetailViewController"
+                   var detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  RentDetailViewController
+                   detailView.vehicleRent = Array(ObjectManager.vehicleRentObjects.values)[indexPath.row]
+                    self.navigationController?.pushViewController(detailView, animated: true)
+           
+           }
+        
         
     }

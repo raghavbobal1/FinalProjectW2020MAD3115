@@ -328,6 +328,7 @@
                                 <state key="normal" image="plus"/>
                                 <connections>
                                     <action selector="btnAdd:" destination="dc8-PI-6l9" eventType="touchUpInside" id="kpH-y0-cWl"/>
+                                    <action selector="btnAddDown:" destination="Ltb-W8-m6q" eventType="touchUpInside" id="UQ9-va-wri"/>
                                     <action selector="btnAddDown:" destination="HgN-Dm-niK" eventType="touchUpInside" id="iC8-7v-qMT"/>
                                 </connections>
                             </button>
@@ -346,6 +347,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="CdP-dj-AWJ"/>
                     <connections>
+                        <outlet property="btnAdd" destination="ws8-IE-nWG" id="H5U-gR-RkS"/>
                         <outlet property="tableRent" destination="IpI-r3-SQ6" id="4ej-Mk-Kjq"/>
                     </connections>
                 </viewController>

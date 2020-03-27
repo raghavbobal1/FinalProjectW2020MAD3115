@@ -16,7 +16,8 @@ class RentCustomCell: UITableViewCell{
 }
 
 class RentListViewController: UIViewController {
-
+    @IBOutlet weak var btnAdd: UIButton!
+    
     @IBOutlet weak var tableRent: UITableView!
     
         
@@ -30,7 +31,9 @@ class RentListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
             
-      
+    @IBAction func btnAddDown(_ sender: Any) {
+    }
+    
             
 
             /*

@@ -9,7 +9,13 @@
 import UIKit
 
 class OwnerDetailViewController: UIViewController {
+    @IBOutlet weak var tblVehicles: UITableView!
     
+    @IBOutlet weak var labelCompanyName: UILabel!
+    @IBOutlet weak var labelPhoneNumber: UILabel!
+    @IBOutlet weak var labelEmail: UILabel!
+    @IBOutlet weak var labelDOB: UILabel!
+    @IBOutlet weak var labelFullName: UILabel!
     var owner: Person?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +27,12 @@ class OwnerDetailViewController: UIViewController {
         guard let o = ownerObj  else {
             return
         }
+        
+        self.labelFullName.text = o.fullName
+        self.labelDOB.text = o.birthDate?.printFormat()
+        self.labelEmail.text = o.contact.emailId
+        self.labelPhoneNumber.text = o.contact.mobileNumber
+        self.labelCompanyName.text = o.companyTitle
         
         // Do any additional setup after loading the view.
     }

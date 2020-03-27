@@ -25,6 +25,9 @@ class Person :  TypeName
      var password: String
      var contact: Contact
      var salt: String
+    var fullName : String {
+        firstName + " " + lastName
+    }
     
     init(id: String, firstName: String, lastName: String, gender: Gender,birthDate: Date?, userName: String, password: String, contact: Contact) {
         self.id = id

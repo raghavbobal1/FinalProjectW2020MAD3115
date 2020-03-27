@@ -26,6 +26,14 @@ class CustomerDetailViewController: UIViewController {
         guard let cust = customerObj  else {
             return
         }
+        
+        self.labelFullName.text = cust.fullName
+        self.labelDOB.text = cust.birthDate?.printFormat()
+        self.labelEmail.text = cust.contact.emailId
+        self.labelPhoneNumber.text = cust.contact.mobileNumber
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     

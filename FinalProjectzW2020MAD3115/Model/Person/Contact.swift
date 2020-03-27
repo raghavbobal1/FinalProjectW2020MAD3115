@@ -12,8 +12,8 @@ import Foundation
 
 public class Contact
 {
-    private var mobileNumber: String
-    private var emailId: String
+     var mobileNumber: String
+     var emailId: String
     private var address: Address?
     
     

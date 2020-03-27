@@ -246,6 +246,27 @@ struct ObjectManager{
            return  ObjectManager.vehicleRentObjects[id]
        }
     
+    func getVehicleForDriver(id:String) -> Vehicle?{
+        for(_, p) in ObjectManager.carObjects{
+            if id == p.driver?.id{
+                return p
+            }
+        }
+        
+        for(_, p2) in ObjectManager.busObjects{
+            if id == p2.driver?.id{
+                return p2
+            }
+        }
+        
+        for(_, p3) in ObjectManager.motorCycleObjects{
+            if id == p3.driver?.id{
+                return p3
+            }
+        }
+        return nil
+        
+    }
     
     
 //    func addObject(vehicle: Vehicle, typeName: String = Car.typeSName){

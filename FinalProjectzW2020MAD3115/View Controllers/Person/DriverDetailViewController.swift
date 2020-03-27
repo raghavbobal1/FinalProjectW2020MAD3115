@@ -17,6 +17,7 @@ class DriverDetailViewController: UIViewController {
     @IBOutlet weak var labelDOB: UILabel!
     @IBOutlet weak var lableFullName: UILabel!
     var driver: Person?
+    var driverObj: Driver?
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let driver = self.driver else {
@@ -28,6 +29,7 @@ class DriverDetailViewController: UIViewController {
             return
         }
         
+        self.driverObj = d
         self.lableFullName.text = d.fullName
         self.labelDOB.text
             = d.birthDate?.printFormat()
@@ -35,6 +37,8 @@ class DriverDetailViewController: UIViewController {
         self.labelPhoneNumber.text = d.contact.mobileNumber
         self.labelDrivingLicence.text = d.drivingLicenceNumber
         
+        self.tblVehicles.dataSource = self
+        self.tblVehicles.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -49,4 +53,43 @@ class DriverDetailViewController: UIViewController {
     }
     */
 
+}
+
+
+extension DriverDetailViewController: UITableViewDataSource, UITableViewDelegate{
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+       }
+       
+       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+           var cell = tableView.dequeueReusableCell(withIdentifier: "OwnerDetailVehicleCell")
+        
+        
+        if let vehicle = ObjectManager.getInstance().getVehicleForDriver(id: self.driverObj!.id)
+        {
+            
+            cell?.textLabel?.text = "Vehicle id: \(vehicle.vehicleId)"
+            
+        }
+        
+        return cell!
+    }
+    
+       func numberOfSections(in tableView: UITableView) -> Int {
+           return 1
+           
+       }
+       
+       func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           
+          let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vcStoryBoardId = "VehicleDetailViewController"
+                var detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  VehicleDetailViewController
+        detailView.vehicle = ObjectManager.getInstance().getVehicleForDriver(id: self.driverObj!.id)!
+                 self.navigationController?.pushViewController(detailView, animated: true)
+       }
+
+    
+    
+    
 }

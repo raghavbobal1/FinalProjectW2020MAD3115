@@ -16,12 +16,12 @@ class RentCustomCell: UITableViewCell{
 }
 
 class RentListViewController: UIViewController {
-    @IBOutlet weak var btnAdd: UIButton!
     
     @IBOutlet weak var tableRent: UITableView!
     
         
-            
+    @IBOutlet weak var btnAdd: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableRent.delegate = self
@@ -31,13 +31,14 @@ class RentListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
             
-    @IBAction func btnAddDown(_ sender: Any) {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    @IBAction func btnAddDown(_ sender: Any) {
+    
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
                
                 
                 var vcStoryBoardId = "AddRentViewController"
-               let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  AddRentViewController
+               let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId)
                self.navigationController?.pushViewController(detailView, animated: true)
         
     }

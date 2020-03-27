@@ -30,7 +30,7 @@ extension UITextField
         
         color.toValue = selectedColor
         
-        color.duration = 2
+        color.duration = 0.4
         color.repeatCount = 1
         
         self.layer.borderColor =  selectedColor.cgColor

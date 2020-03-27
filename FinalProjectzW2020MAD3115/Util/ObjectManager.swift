@@ -36,6 +36,19 @@ struct ObjectManager{
         return obj
     }
     
+    func getRandomID() -> String{
+       func randomString(len:Int) -> String {
+            let charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+            let c = Array(charSet)
+            var s:String = ""
+            for _ in (1...10) {
+                s.append(c[Int(arc4random()) % c.count])
+            }
+            return s
+        }
+        return randomString(len: 8)
+    }
+    
     
     static func getVehicleById(id: String) -> Vehicle? {
         if ObjectManager.carObjects.keys.contains(id){

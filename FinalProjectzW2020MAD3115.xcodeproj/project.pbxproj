@@ -12,6 +12,8 @@
 		AB25882D242D9B78000B3A5A /* VehicleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25882C242D9B78000B3A5A /* VehicleListViewController.swift */; };
 		AB25882F242DB14E000B3A5A /* RentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25882E242DB14E000B3A5A /* RentListViewController.swift */; };
 		AB258832242DB96C000B3A5A /* CustomerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258831242DB96C000B3A5A /* CustomerDetailViewController.swift */; };
+		AB258834242DBF74000B3A5A /* OwnerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258833242DBF74000B3A5A /* OwnerDetailViewController.swift */; };
+		AB258836242DBF83000B3A5A /* DriverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258835242DBF83000B3A5A /* DriverDetailViewController.swift */; };
 		AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */; };
 		AB9998E0242D4652002E2E89 /* DriverData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998DF242D4652002E2E89 /* DriverData.json */; };
 		AB9998E2242D46C5002E2E89 /* CustomerData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998E1242D46C5002E2E89 /* CustomerData.json */; };
@@ -57,6 +59,8 @@
 		AB25882C242D9B78000B3A5A /* VehicleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewController.swift; sourceTree = "<group>"; };
 		AB25882E242DB14E000B3A5A /* RentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentListViewController.swift; sourceTree = "<group>"; };
 		AB258831242DB96C000B3A5A /* CustomerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailViewController.swift; sourceTree = "<group>"; };
+		AB258833242DBF74000B3A5A /* OwnerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerDetailViewController.swift; sourceTree = "<group>"; };
+		AB258835242DBF83000B3A5A /* DriverDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailViewController.swift; sourceTree = "<group>"; };
 		AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		AB9998DF242D4652002E2E89 /* DriverData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverData.json; sourceTree = "<group>"; };
 		AB9998E1242D46C5002E2E89 /* CustomerData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerData.json; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				AB258831242DB96C000B3A5A /* CustomerDetailViewController.swift */,
+				AB258833242DBF74000B3A5A /* OwnerDetailViewController.swift */,
+				AB258835242DBF83000B3A5A /* DriverDetailViewController.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -335,6 +341,7 @@
 				BD91E1252422ADF200157F9A /* Gender .swift in Sources */,
 				BD91E11B2422ADD400157F9A /* Customer.swift in Sources */,
 				BD3D10A62421D26F00614770 /* Vehicle.swift in Sources */,
+				AB258834242DBF74000B3A5A /* OwnerDetailViewController.swift in Sources */,
 				BD3D10B92421D3B200614770 /* Float+Extensions.swift in Sources */,
 				BD3D10A12421D1CC00614770 /* TypeNameProtocol.swift in Sources */,
 				BD3D10A32421D1EB00614770 /* OutputStream.swift in Sources */,
@@ -343,6 +350,7 @@
 				BD91E11F2422ADDF00157F9A /* Contact.swift in Sources */,
 				AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */,
 				BD91E1232422ADED00157F9A /* Owner.swift in Sources */,
+				AB258836242DBF83000B3A5A /* DriverDetailViewController.swift in Sources */,
 				BDC29ED52420A10200CC26E4 /* SceneDelegate.swift in Sources */,
 				AB25882D242D9B78000B3A5A /* VehicleListViewController.swift in Sources */,
 				BD3D10A82421D28800614770 /* Car.swift in Sources */,

@@ -19,6 +19,7 @@ class PersonListViewController: UIViewController {
     
     @IBOutlet weak var personTable: UITableView!
     var valueArr: [Person] = Array(ObjectManager.customerObjects.values)
+    var currentType =  Customer.typeSName
     
     @IBOutlet weak var personSegment: UISegmentedControl!
     override func viewDidLoad() {
@@ -32,10 +33,13 @@ class PersonListViewController: UIViewController {
         switch personSegment.selectedSegmentIndex {
         case 0:
             valueArr = Array(ObjectManager.customerObjects.values)
+            currentType = Customer.typeSName
         case 1:
             valueArr = Array(ObjectManager.ownerObjects.values)
+            currentType = Owner.typeSName
         default:
             valueArr = Array(ObjectManager.driverObjects.values)
+            currentType = Driver.typeSName
         }
         self.personTable.reloadData()
     }
@@ -66,6 +70,25 @@ extension PersonListViewController: UITableViewDataSource, UITableViewDelegate{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        var vcStoryBoardId = ""
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        switch currentType {
+        case Customer.typeSName:
+            vcStoryBoardId = "CustomerDetailViewController"
+            let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  CustomerDetailViewController
+            detailView.customer = self.valueArr[indexPath.row]
+            self.navigationController?.pushViewController(detailView, animated: true)
+            
+        case Owner.typeSName:
+             vcStoryBoardId = "CustomerDetailViewController"
+        default:
+             vcStoryBoardId = "CustomerDetailViewController"
+        }
+        
     }
 
     

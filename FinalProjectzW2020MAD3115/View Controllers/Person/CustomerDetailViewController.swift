@@ -9,7 +9,12 @@
 import UIKit
 
 class CustomerDetailViewController: UIViewController {
+    @IBOutlet weak var tblBookins: UITableView!
     
+    @IBOutlet weak var labelPhoneNumber: UILabel!
+    @IBOutlet weak var labelEmail: UILabel!
+    @IBOutlet weak var labelDOB: UILabel!
+    @IBOutlet weak var labelFullName: UILabel!
     var customer: Person?
     override func viewDidLoad() {
         super.viewDidLoad()

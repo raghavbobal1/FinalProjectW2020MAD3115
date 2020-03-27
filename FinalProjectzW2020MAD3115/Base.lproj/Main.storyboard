@@ -170,217 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcn-vo-DHi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2745" y="-234"/>
-        </scene>
-        <!--Person Detail View Controller-->
-        <scene sceneID="FaL-36-IL0">
-            <objects>
-                <viewController storyboardIdentifier="SelectorVC" id="r5x-Dx-dEF" customClass="PersonDetailViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qtr-AR-J8E">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="123" translatesAutoresizingMaskIntoConstraints="NO" id="Fdu-7S-5gq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.57713356598984777" green="0.27725043856375037" blue="0.27725043856375037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTX-ah-6yG">
-                                <rect key="frame" x="62" y="729" width="128" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59091449873096447" green="0.035659194390311191" blue="0.03805791878083651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                <state key="normal" title="OWNERS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="K9C-TG-Pp9" kind="show" id="zpc-qk-WOS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c3-C6-84C">
-                                <rect key="frame" x="20" y="519" width="101" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.57913655040000001" green="0.05584198982" blue="0.001201593201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="19"/>
-                                <state key="normal" title="DRIVERS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="cxV-hn-gIc" kind="show" id="a8H-3t-AM2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWL-RI-N3E">
-                                <rect key="frame" x="269" y="454" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.57913655040000001" green="0.05584198982" blue="0.001201593201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
-                                <state key="normal" title="CUSTOMERS">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="GSu-8x-iNA" kind="show" id="uVO-h6-dch"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="aBR-Wp-Wit"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="fzH-bK-nN3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7fD-na-qr2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3638" y="-234"/>
-        </scene>
-        <!--Driver View Controller-->
-        <scene sceneID="9F5-zP-oI6">
-            <objects>
-                <viewController id="cxV-hn-gIc" customClass="DriverViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RIa-EU-zB1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ownerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="i5I-F3-Kg9">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="392"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNv-Ie-TMj">
-                                <rect key="frame" x="8" y="44" width="74" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="BackButtonLogo"/>
-                                <connections>
-                                    <action selector="backbutton:" destination="cxV-hn-gIc" eventType="touchUpInside" id="X7o-p9-LvL"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="UBH-8t-Na6"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="7Wn-9X-qLD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eeJ-ke-ZOg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5290" y="-234"/>
-        </scene>
-        <!--Selection View Controller-->
-        <scene sceneID="i9s-H5-w15">
-            <objects>
-                <viewController storyboardIdentifier="selectionVC" id="MER-Kv-IhZ" customClass="SelectionViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2kT-cF-uHk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="cLc-Dg-cQ9"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Imo-NL-2iu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hYs-0s-peX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4355" y="510"/>
-        </scene>
-        <!--Owner View Controller-->
-        <scene sceneID="eud-cW-czN">
-            <objects>
-                <viewController id="K9C-TG-Pp9" customClass="OwnerViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Uq3-DK-3Dc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lamborghini-Huracan-Supercar-Desktop-HD-Wallpaper-4K-3840x2160" translatesAutoresizingMaskIntoConstraints="NO" id="R5n-Wm-5yQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="384"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKd-nF-RFF">
-                                <rect key="frame" x="8" y="44" width="74" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="BackButtonLogo"/>
-                                <connections>
-                                    <action selector="backbutton:" destination="K9C-TG-Pp9" eventType="touchUpInside" id="4q0-Of-Xuo"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GSA-qt-9CF">
-                                <rect key="frame" x="0.0" y="378" width="414" height="518"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Xkm-Tg-6o4">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xkm-Tg-6o4" id="B1b-nO-Pw1">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oga-p2-36W">
-                                <rect key="frame" x="0.0" y="-134" width="414" height="504"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="RV2-Fc-fhq">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RV2-Fc-fhq" id="ouK-ZC-0cZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="beR-57-Kk5"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="537-77-Yr1"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wQ5-ig-whm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5290" y="1173"/>
-        </scene>
-        <!--Customer View Controller-->
-        <scene sceneID="Sbv-Aw-tHv">
-            <objects>
-                <viewController id="GSu-8x-iNA" customClass="CustomerViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c72-GK-18f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="supercar-wallpapers-bugatti-2" translatesAutoresizingMaskIntoConstraints="NO" id="aID-HR-VcT">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="392"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9G-24-k2h">
-                                <rect key="frame" x="8" y="44" width="74" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="BackButtonLogo"/>
-                                <connections>
-                                    <action selector="backbutton:" destination="GSu-8x-iNA" eventType="touchUpInside" id="gk8-VI-8tn"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qfx-Rh-Pk4">
-                                <rect key="frame" x="0.0" y="392" width="414" height="504"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Gmj-WG-BTc">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gmj-WG-BTc" id="cCr-Ls-pGD">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="PDb-Im-MLt"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="eeo-Dh-BmE"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BOY-od-9r0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5290" y="-1362"/>
+            <point key="canvasLocation" x="1958" y="850"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="JxY-h3-Q47">
@@ -468,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIM-E5-N6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2745" y="453"/>
+            <point key="canvasLocation" x="2722" y="-319"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hn4-BR-bTC">
@@ -487,61 +277,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bd3-ml-uqS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="XOg-bR-Eov">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WC5-NP-k3t" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Czw-fb-8fw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="r5x-Dx-dEF" kind="relationship" relationship="rootViewController" id="tKD-z1-nr2"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gNZ-Ad-88S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3638" y="-1045"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="xPx-9d-Jfo">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="owk-rf-qhi" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="YV5-5x-61V"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5ol-1W-dmw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="bdW-kk-6A9" kind="relationship" relationship="rootViewController" id="3iL-lv-MX3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E3F-N6-dYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2745" y="-1045"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Nyu-1L-tPy">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SZ4-ag-lQ5" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ues-st-W8e">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="MER-Kv-IhZ" kind="relationship" relationship="rootViewController" id="gdD-36-Htj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="55w-v7-7c7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3638" y="510"/>
         </scene>
         <!--Rent List View Controller-->
         <scene sceneID="HiR-VI-A3z">
@@ -607,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hs-y3-bTE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4331.884057971015" y="2016.9642857142856"/>
+            <point key="canvasLocation" x="4096" y="1904"/>
         </scene>
         <!--Vehicle List View Controller-->
         <scene sceneID="lYZ-MA-nA1">
@@ -677,7 +412,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JxL-ue-IH4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3221.739130434783" y="2016.9642857142856"/>
+            <point key="canvasLocation" x="3128" y="1904"/>
         </scene>
         <!--Person List View Controller-->
         <scene sceneID="Eb0-Bb-pfy">
@@ -772,20 +507,16 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijB-Rz-EgU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3593" y="1192"/>
+            <point key="canvasLocation" x="2957" y="850"/>
         </scene>
     </scenes>
     <resources>
-        <image name="123" width="594" height="800"/>
         <image name="BackButtonLogo" width="1200" height="630"/>
-        <image name="Lamborghini-Huracan-Supercar-Desktop-HD-Wallpaper-4K-3840x2160" width="3840" height="2160"/>
         <image name="LoginPageLogo" width="500" height="750"/>
         <image name="SignUpPageLogo" width="500" height="750"/>
         <image name="homepagelogo" width="3923" height="3704"/>
-        <image name="ownerLogo" width="750" height="500"/>
         <image name="person" width="40" height="40"/>
         <image name="rent" width="40" height="40"/>
-        <image name="supercar-wallpapers-bugatti-2" width="1280" height="800"/>
         <image name="vehicle" width="40" height="40"/>
     </resources>
 </document>

@@ -108,7 +108,7 @@ class AddRentViewController: UIViewController {
         
         ObjectManager.vehicleRentObjects.updateValue(vehicleRent, forKey: vehicleRent.id)
 
-        
+        self.navigationController?.popViewController(animated: true)
         
     }
     

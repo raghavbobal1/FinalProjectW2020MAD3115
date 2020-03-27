@@ -29,7 +29,7 @@ class VehicleRent: TypeName
     
    func calculateNumberOfDays() -> Int
     {
-        return Calendar.current.dateComponents([.day], from: self.rentStartDate, to: self.rentEndDate).day!
+        return (Calendar.current.dateComponents([.day], from: self.rentStartDate, to: self.rentEndDate).day!) + 1
     }
 
     func display(){

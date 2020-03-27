@@ -30,6 +30,18 @@ struct ObjectManager{
     var objectType: String = "Vehicle"
     
     
+    static func getOwnerForVehicle(id: String) -> Owner?{
+        
+        for (_,d) in ObjectManager.ownerObjects{
+            for(_,v) in d.vehicleList{
+                if v.vehicleId == id{
+                    return d
+                }
+            }
+            
+        }
+        return nil
+    }
     
     private static var obj = ObjectManager()
     static func getInstance() -> ObjectManager{

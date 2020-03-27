@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum FuelType
+public enum FuelType:String
 {
     case PETROL,DIESEL,ELECTRIC
     
@@ -24,4 +24,6 @@ public enum FuelType
                 return FuelType.ELECTRIC
         }
     }
+    
+    
 }

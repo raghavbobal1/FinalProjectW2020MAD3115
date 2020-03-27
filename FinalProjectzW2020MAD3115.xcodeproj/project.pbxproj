@@ -24,6 +24,7 @@
 		AB258848242DFC56000B3A5A /* AddDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258847242DFC56000B3A5A /* AddDriverViewController.swift */; };
 		AB25884A242E07BB000B3A5A /* AddVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258849242E07BB000B3A5A /* AddVehicleViewController.swift */; };
 		AB25884C242E184C000B3A5A /* AddRentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25884B242E184C000B3A5A /* AddRentViewController.swift */; };
+		AB25884E242E6535000B3A5A /* SetingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25884D242E6535000B3A5A /* SetingsViewController.swift */; };
 		AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */; };
 		AB9998E0242D4652002E2E89 /* DriverData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998DF242D4652002E2E89 /* DriverData.json */; };
 		AB9998E2242D46C5002E2E89 /* CustomerData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998E1242D46C5002E2E89 /* CustomerData.json */; };
@@ -81,6 +82,7 @@
 		AB258847242DFC56000B3A5A /* AddDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDriverViewController.swift; sourceTree = "<group>"; };
 		AB258849242E07BB000B3A5A /* AddVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleViewController.swift; sourceTree = "<group>"; };
 		AB25884B242E184C000B3A5A /* AddRentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRentViewController.swift; sourceTree = "<group>"; };
+		AB25884D242E6535000B3A5A /* SetingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetingsViewController.swift; sourceTree = "<group>"; };
 		AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		AB9998DF242D4652002E2E89 /* DriverData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverData.json; sourceTree = "<group>"; };
 		AB9998E1242D46C5002E2E89 /* CustomerData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerData.json; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				BD09D0B7242349B5000294F8 /* SignUpViewController.swift */,
 				AB258822242D748E000B3A5A /* SelectionNavViewController.swift */,
 				AB258837242DC0F5000B3A5A /* CustomTabBarViewController.swift */,
+				AB25884D242E6535000B3A5A /* SetingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				BD3D10AE2421D2D900614770 /* MotorCycle.swift in Sources */,
 				BD3D10B72421D39200614770 /* String+Extensions.swift in Sources */,
 				BD91E1272422BF6B00157F9A /* Extension+UITextField .swift in Sources */,
+				AB25884E242E6535000B3A5A /* SetingsViewController.swift in Sources */,
 				AB25882B242D8DE4000B3A5A /* PersonListViewController.swift in Sources */,
 				BD09D0B8242349B5000294F8 /* SignUpViewController.swift in Sources */,
 				BD91E1212422ADE300157F9A /* Driver.swift in Sources */,

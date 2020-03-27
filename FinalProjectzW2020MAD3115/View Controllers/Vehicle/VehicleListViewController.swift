@@ -116,6 +116,7 @@ extension VehicleListViewController: UITableViewDataSource, UITableViewDelegate{
             else{
                 cell.labelSelfDrive.text = "Not Self Drive"
             }
+            cell.layer.borderWidth = 1.0
             return cell
         }
         

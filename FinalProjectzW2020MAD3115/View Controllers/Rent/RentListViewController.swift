@@ -75,6 +75,7 @@ extension RentListViewController: UITableViewDataSource, UITableViewDelegate{
             cell.labelDays.text  = "\(obj.calculateNumberOfDays()) Days"
             cell.labelKmDriven.text = obj.kmDriven.distanceFormat()
             cell.labelTotalBill.text = obj.totalBill.priceFormat()
+            cell.layer.borderWidth = 1.0
             return cell
         }
         

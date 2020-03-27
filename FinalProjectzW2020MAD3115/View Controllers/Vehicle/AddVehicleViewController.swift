@@ -100,14 +100,14 @@ class AddVehicleViewController: UIViewController {
         
         switch type {
         case Car.typeSName:
-            var car = Car(vehicleId: ObjectManager.getInstance().getRandomID(), description: description, manufacturer: textManufacturer, fuelType:fuelType, carColor: "red", carType: "small", isSelfDrive: selfDrive, isInsured: hasInsurance, insuranceProviderName: insuranceProvider, numberOfSeat: 4, baseRate: Float(textBaseRate) ?? 0, perKmRate: Float(textPerKM) ?? 0.0, driver: driver)
+            var car = Car(vehicleId: ObjectManager.getInstance().getRandomID(), description: textDescription, manufacturer: textManufacturer, fuelType:fuelType, carColor: "red", carType: "small", isSelfDrive: selfDrive, isInsured: hasInsurance, insuranceProviderName: insuranceProvider, numberOfSeat: 4, baseRate: Float(textBaseRate) ?? 0, perKmRate: Float(textPerKM) ?? 0.0, driver: driver)
             ObjectManager.carObjects.updateValue(car, forKey: car.vehicleId)
         case Bus.typeSName:
-            var bus = Bus(vehicleId: ObjectManager.getInstance().getRandomID(), description: description, manufacturer: textManufacturer, fuelType:fuelType,   isSelfDrive: selfDrive, isInsured: hasInsurance, insuranceProviderName: insuranceProvider, numberOfSeat: 4, baseRate: Float(textBaseRate) ?? 0.0, perKmRate: Float(textPerKM) ?? 0.0, busType: "long", accessibilityServices: true, wifiAvailability: true, standingCapacity: 20, driver:driver)
+            var bus = Bus(vehicleId: ObjectManager.getInstance().getRandomID(), description: textDescription, manufacturer: textManufacturer, fuelType:fuelType,   isSelfDrive: selfDrive, isInsured: hasInsurance, insuranceProviderName: insuranceProvider, numberOfSeat: 4, baseRate: Float(textBaseRate) ?? 0.0, perKmRate: Float(textPerKM) ?? 0.0, busType: "long", accessibilityServices: true, wifiAvailability: true, standingCapacity: 20, driver:driver)
             ObjectManager.busObjects.updateValue(bus, forKey: bus.vehicleId)
             
         default:
-            var motorCycle = MotorCycle(vehicleId: ObjectManager.getInstance().getRandomID(), description: description, manufacturer: textManufacturer, fuelType:fuelType, topSpeed: 45, mileage: 33, isSelfDrive: selfDrive, isInsured: hasInsurance, insuranceProviderName: insuranceProvider, numberOfSeat: 3, baseRate: Float(textBaseRate) ?? 0.0, perKmRate: Float(textPerKM) ?? 0.0, driver: driver)
+            var motorCycle = MotorCycle(vehicleId: ObjectManager.getInstance().getRandomID(), description: textDescription, manufacturer: textManufacturer, fuelType:fuelType, topSpeed: 45, mileage: 33, isSelfDrive: selfDrive, isInsured: hasInsurance, insuranceProviderName: insuranceProvider, numberOfSeat: 3, baseRate: Float(textBaseRate) ?? 0.0, perKmRate: Float(textPerKM) ?? 0.0, driver: driver)
             ObjectManager.motorCycleObjects.updateValue(motorCycle, forKey: motorCycle.vehicleId)
         }
         
@@ -138,7 +138,7 @@ extension AddVehicleViewController : UIPickerViewDataSource, UIPickerViewDelegat
       }
        
        func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return ObjectManager.getAllFreeDrivers()[row].id
+        return ObjectManager.getAllFreeDrivers()[row].fullName
        }
           
        func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

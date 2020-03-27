@@ -18,15 +18,26 @@ class AddRentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let datePicker = UIDatePicker()
-//        datePicker.datePickerMode = .date
-//        textStartDate.inputView = datePicker
-//        textEndDate.inputView = datePicker
-
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        textStartDate.inputView = datePicker
+        textEndDate.inputView = datePicker
+        
+         datePicker.addTarget(self, action: #selector(AddPersonViewController.dateChanged(datePicker:)), for: .valueChanged)
+        
+        let tapGuesture = UITapGestureRecognizer(target: self, action: #selector(AddPersonViewController.viewTapped(guestureRecognizer:)))
+        view.addGestureRecognizer(tapGuesture)
         // Do any additional setup after loading the view.
     }
     
+    @objc func viewTapped(guestureRecognizer: UITapGestureRecognizer) {
+               view.endEditing(true)
+           }
 
+    @objc func dateChanged(datePicker: UIDatePicker) {
+               self.textStartDate.text = datePicker.date.printFormat(format: "MMMM/dd/yyyy")
+               //view.endEditing(true)
+           }
     /*
     // MARK: - Navigation
 

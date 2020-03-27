@@ -322,6 +322,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ws8-IE-nWG">
+                                <rect key="frame" x="313" y="711" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="plus"/>
+                                <connections>
+                                    <action selector="btnAdd:" destination="dc8-PI-6l9" eventType="touchUpInside" id="kpH-y0-cWl"/>
+                                    <action selector="btnAddDown:" destination="HgN-Dm-niK" eventType="touchUpInside" id="iC8-7v-qMT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>

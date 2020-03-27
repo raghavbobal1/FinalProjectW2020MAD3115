@@ -15,6 +15,7 @@
 		AB258834242DBF74000B3A5A /* OwnerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258833242DBF74000B3A5A /* OwnerDetailViewController.swift */; };
 		AB258836242DBF83000B3A5A /* DriverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258835242DBF83000B3A5A /* DriverDetailViewController.swift */; };
 		AB258838242DC0F5000B3A5A /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258837242DC0F5000B3A5A /* CustomTabBarViewController.swift */; };
+		AB25883B242DC54E000B3A5A /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25883A242DC54E000B3A5A /* VehicleDetailViewController.swift */; };
 		AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */; };
 		AB9998E0242D4652002E2E89 /* DriverData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998DF242D4652002E2E89 /* DriverData.json */; };
 		AB9998E2242D46C5002E2E89 /* CustomerData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998E1242D46C5002E2E89 /* CustomerData.json */; };
@@ -63,6 +64,7 @@
 		AB258833242DBF74000B3A5A /* OwnerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerDetailViewController.swift; sourceTree = "<group>"; };
 		AB258835242DBF83000B3A5A /* DriverDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailViewController.swift; sourceTree = "<group>"; };
 		AB258837242DC0F5000B3A5A /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		AB25883A242DC54E000B3A5A /* VehicleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewController.swift; sourceTree = "<group>"; };
 		AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		AB9998DF242D4652002E2E89 /* DriverData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverData.json; sourceTree = "<group>"; };
 		AB9998E1242D46C5002E2E89 /* CustomerData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerData.json; sourceTree = "<group>"; };
@@ -126,6 +128,15 @@
 			path = Person;
 			sourceTree = "<group>";
 		};
+		AB258839242DC534000B3A5A /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				AB25882C242D9B78000B3A5A /* VehicleListViewController.swift */,
+				AB25883A242DC54E000B3A5A /* VehicleDetailViewController.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
 		AB9998DE242D4621002E2E89 /* JSONfiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,12 +153,12 @@
 		BD3D10892420B7D900614770 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AB258839242DC534000B3A5A /* Vehicle */,
 				AB258830242DB953000B3A5A /* Person */,
 				BDC29ED62420A10200CC26E4 /* HomePageViewController.swift */,
 				BD3D10872420B7D100614770 /* LoginViewController.swift */,
 				BD09D0B7242349B5000294F8 /* SignUpViewController.swift */,
 				AB258822242D748E000B3A5A /* SelectionNavViewController.swift */,
-				AB25882C242D9B78000B3A5A /* VehicleListViewController.swift */,
 				AB25882E242DB14E000B3A5A /* RentListViewController.swift */,
 				AB258837242DC0F5000B3A5A /* CustomTabBarViewController.swift */,
 			);
@@ -350,6 +361,7 @@
 				AB258838242DC0F5000B3A5A /* CustomTabBarViewController.swift in Sources */,
 				BD3D10A32421D1EB00614770 /* OutputStream.swift in Sources */,
 				AB258832242DB96C000B3A5A /* CustomerDetailViewController.swift in Sources */,
+				AB25883B242DC54E000B3A5A /* VehicleDetailViewController.swift in Sources */,
 				AB258823242D748E000B3A5A /* SelectionNavViewController.swift in Sources */,
 				BD91E11F2422ADDF00157F9A /* Contact.swift in Sources */,
 				AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */,

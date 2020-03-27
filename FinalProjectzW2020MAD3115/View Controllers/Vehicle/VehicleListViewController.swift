@@ -19,6 +19,8 @@ class VehicleListViewController: UIViewController {
     @IBOutlet weak var segmentVehicleType: UISegmentedControl!
     @IBOutlet weak var vehicleTable: UITableView!
     var valueArr: [Vehicle] = Array(ObjectManager.carObjects.values)
+    
+    var currentType =  Car.typeSName
         
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -33,10 +35,13 @@ class VehicleListViewController: UIViewController {
             switch segmentVehicleType.selectedSegmentIndex {
             case 0:
                 valueArr = Array(ObjectManager.carObjects.values)
+                currentType =  Car.typeSName
             case 1:
                 valueArr = Array(ObjectManager.busObjects.values)
+                currentType =  Bus.typeSName
             default:
                 valueArr = Array(ObjectManager.motorCycleObjects.values)
+                currentType =  MotorCycle.typeSName
             }
             self.vehicleTable.reloadData()
         }
@@ -68,6 +73,17 @@ extension VehicleListViewController: UITableViewDataSource, UITableViewDelegate{
         func numberOfSections(in tableView: UITableView) -> Int {
             return 1
         }
-
+    
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vcStoryBoardId = "VehicleDetailViewController"
+            var detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  VehicleDetailViewController
+            detailView.vehicle = self.valueArr[indexPath.row]
+            detailView.type  = self.currentType
+            self.navigationController?.pushViewController(detailView, animated: true)
+    
+    }
         
     }

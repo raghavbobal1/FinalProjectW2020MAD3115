@@ -12,6 +12,7 @@ class AddRentViewController: UIViewController {
 
     @IBOutlet weak var textStartDate: UITextField!
     
+    @IBOutlet weak var textKMDriven: UITextField!
     @IBOutlet weak var textEndDate: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()

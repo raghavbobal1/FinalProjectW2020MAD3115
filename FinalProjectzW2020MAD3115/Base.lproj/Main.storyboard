@@ -456,6 +456,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="textEndDate" destination="9ct-Vd-ujS" id="X5d-pg-B14"/>
+                        <outlet property="textKMDriven" destination="GQY-dC-opo" id="Mrv-56-FMb"/>
                         <outlet property="textStartDate" destination="gpa-5y-lXM" id="gQs-PE-4OL"/>
                     </connections>
                 </viewController>

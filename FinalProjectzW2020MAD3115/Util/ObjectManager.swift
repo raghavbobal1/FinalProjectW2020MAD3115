@@ -105,6 +105,34 @@ struct ObjectManager{
         return nil
     }
     
+    func  getCustomerById(id: String) -> Customer? {
+        return  ObjectManager.customerObjects[id]
+    }
+    
+    func  getOwnerById(id: String) -> Owner? {
+        return  ObjectManager.ownerObjects[id]
+    }
+    
+    func  getDriverById(id: String) -> Driver? {
+        return  ObjectManager.driverObjects[id]
+    }
+    
+    func  getCarById(id: String) -> Car? {
+           return  ObjectManager.carObjects[id]
+       }
+    
+    func  getBusById(id: String) -> Bus? {
+           return  ObjectManager.busObjects[id]
+       }
+    
+    func  getmotorCycleById(id: String) -> MotorCycle? {
+           return  ObjectManager.motorCycleObjects[id]
+       }
+    
+    func  getVehicleRentById(id: String) -> VehicleRent? {
+           return  ObjectManager.vehicleRentObjects[id]
+       }
+    
     
     
     func addObject(vehicle: Vehicle, typeName: String = Car.typeSName){

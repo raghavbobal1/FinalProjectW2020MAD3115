@@ -14,7 +14,15 @@ class CustomerDetailViewController: UIViewController {
     var customer: Person?
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let customer = self.customer else {
+            return
+        }
+        var customerObj  = ObjectManager.getInstance().getCustomerById(id: customer.id)
         
+        guard let cust = customerObj  else {
+            return
+        }
+        self.labelCustomerId.text = cust.id
         
         // Do any additional setup after loading the view.
     }

@@ -22,10 +22,36 @@ class AddPersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+//        var pickerView = UIPickerView()
+//        pickerView.delegate = self
+//        pickerView.dataSource = self
+//
+        
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        textBirthDate.inputView = datePicker
+        
+        datePicker.addTarget(self, action: #selector(AddPersonViewController.dateChanged(datePicker:)), for: .valueChanged)
+        
+        let tapGuesture = UITapGestureRecognizer(target: self, action: #selector(AddPersonViewController.viewTapped(guestureRecognizer:)))
+        view.addGestureRecognizer(tapGuesture)
+        
+    }
+    
+    @objc func viewTapped(guestureRecognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        self.textBirthDate.text = datePicker.date.printFormat(format: "MMMM/dd/yyyy")
+        //view.endEditing(true)
     }
     
     @IBAction func btnSaveDown(_ sender: Any) {
+    
+    
+    
+    
     }
     
     /*
@@ -39,3 +65,20 @@ class AddPersonViewController: UIViewController {
     */
 
 }
+
+
+//func numberOfComponents(in pickerView: UIPickerView) -> Int {
+//          return 1
+//         }
+//
+//     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//         return Gender.allCases.count
+//     }
+//
+//      func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//          return "\(Gender.allCases[row])"
+//      }
+//
+//      func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//          self.genderTextField.text = "\(Gender.allCases[row])"
+//      }

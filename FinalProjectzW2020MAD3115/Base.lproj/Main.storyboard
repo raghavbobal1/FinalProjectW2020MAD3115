@@ -579,7 +579,7 @@
             </objects>
             <point key="canvasLocation" x="1823" y="2757"/>
         </scene>
-        <!--Title-->
+        <!--Add Details-->
         <scene sceneID="jNJ-wU-GgT">
             <objects>
                 <viewController storyboardIdentifier="AddPersonViewController" id="nNS-ee-Qv9" customClass="AddPersonViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
@@ -681,11 +681,9 @@
                                 <rect key="frame" x="20" y="486" width="374" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Contact" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnO-ha-oeN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnO-ha-oeN">
                                         <rect key="frame" x="10" y="8" width="364" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="15" id="vAz-wf-Lxt"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -723,7 +721,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IBp-bh-mGK"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="TvC-ht-MLA">
+                    <navigationItem key="navigationItem" title="Add Details" id="TvC-ht-MLA">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="MPJ-OV-FaB">
                             <connections>
                                 <action selector="btnSaveDown:" destination="nNS-ee-Qv9" id="alf-p7-lpj"/>

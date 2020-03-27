@@ -26,12 +26,20 @@ class RentListViewController: UIViewController {
         super.viewDidLoad()
         self.tableRent.delegate = self
         self.tableRent.dataSource = self
-        
+        self.btnAdd.makeFloating()
        
         // Do any additional setup after loading the view.
     }
             
     @IBAction func btnAddDown(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+               
+                
+                var vcStoryBoardId = "AddRentViewController"
+               let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  AddRentViewController
+               self.navigationController?.pushViewController(detailView, animated: true)
+        
     }
     
             

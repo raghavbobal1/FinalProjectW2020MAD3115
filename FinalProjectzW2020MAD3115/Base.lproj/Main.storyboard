@@ -639,21 +639,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5N4-ny-nS9">
-                                <rect key="frame" x="186" y="135" width="42" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AJ-Zx-ucw">
+                                <rect key="frame" x="25" y="98" width="364" height="350"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUn-g6-j7k">
+                                        <rect key="frame" x="137" y="5" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fUn-g6-j7k" secondAttribute="height" multiplier="1:1" id="YSX-Nl-JzA"/>
+                                            <constraint firstAttribute="height" constant="90" id="s1M-92-3rt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prakash Rana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glM-lN-tGC">
+                                        <rect key="frame" x="82.5" y="100" width="199" height="41"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Ajk-fh-vQc"/>
+                                    <constraint firstItem="fUn-g6-j7k" firstAttribute="centerX" secondItem="5AJ-Zx-ucw" secondAttribute="centerX" id="Kkd-Qu-JCW"/>
+                                    <constraint firstItem="glM-lN-tGC" firstAttribute="top" secondItem="fUn-g6-j7k" secondAttribute="bottom" constant="5" id="NrP-Zb-HtV"/>
+                                    <constraint firstItem="glM-lN-tGC" firstAttribute="centerX" secondItem="5AJ-Zx-ucw" secondAttribute="centerX" id="UGY-EP-ZVh"/>
+                                    <constraint firstItem="fUn-g6-j7k" firstAttribute="top" secondItem="5AJ-Zx-ucw" secondAttribute="top" constant="5" id="dal-QO-3hx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5AJ-Zx-ucw" firstAttribute="top" secondItem="BFP-eq-NFp" secondAttribute="top" constant="10" id="2Rb-k7-oD1"/>
+                            <constraint firstItem="BFP-eq-NFp" firstAttribute="trailing" secondItem="5AJ-Zx-ucw" secondAttribute="trailing" constant="25" id="4aZ-7J-au6"/>
+                            <constraint firstItem="5AJ-Zx-ucw" firstAttribute="leading" secondItem="BFP-eq-NFp" secondAttribute="leading" constant="25" id="Pbk-Wt-5C2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BFP-eq-NFp"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pmm-e2-v2f"/>
-                    <connections>
-                        <outlet property="labelCustomerId" destination="5N4-ny-nS9" id="xA1-OK-xwH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccd-DN-GVD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

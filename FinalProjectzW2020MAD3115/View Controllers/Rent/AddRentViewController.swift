@@ -10,17 +10,16 @@ import UIKit
 
 class AddRentViewController: UIViewController {
 
-    @IBOutlet weak var textVehicle: UITextField!
-    @IBOutlet weak var textKMDriven: UITextField!
-    @IBOutlet weak var textEndDate: UITextField!
     @IBOutlet weak var textStartDate: UITextField!
+    
+    @IBOutlet weak var textEndDate: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let datePicker = UIDatePicker()
-        datePicker.datePickerMode = .date
-        textStartDate.inputView = datePicker
-        textEndDate.inputView = datePicker
+//        let datePicker = UIDatePicker()
+//        datePicker.datePickerMode = .date
+//        textStartDate.inputView = datePicker
+//        textEndDate.inputView = datePicker
 
         // Do any additional setup after loading the view.
     }

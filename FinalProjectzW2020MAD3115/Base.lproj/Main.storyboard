@@ -383,7 +383,7 @@
         <!--Add Details-->
         <scene sceneID="beA-GN-jTH">
             <objects>
-                <viewController storyboardIdentifier="AddRentViewController" id="e3N-hI-l2i" customClass="AddRentViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddRentViewController" id="e3N-hI-l2i" customClass="AddRentViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BLP-6W-H52">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -455,10 +455,8 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ErM-Ra-M3L"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="textEndDate" destination="9ct-Vd-ujS" id="r9c-gf-I2o"/>
-                        <outlet property="textKMDriven" destination="GQY-dC-opo" id="l0p-sb-9iP"/>
-                        <outlet property="textStartDate" destination="gpa-5y-lXM" id="jr0-Hu-Stz"/>
-                        <outlet property="textVehicle" destination="kQE-Dj-FMQ" id="stu-Rn-McB"/>
+                        <outlet property="textEndDate" destination="9ct-Vd-ujS" id="X5d-pg-B14"/>
+                        <outlet property="textStartDate" destination="gpa-5y-lXM" id="gQs-PE-4OL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuL-4f-T46" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -31,6 +31,9 @@ class RentListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
             
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableRent.reloadData()
+    }
         
     @IBAction func btnAddDown(_ sender: Any) {
     

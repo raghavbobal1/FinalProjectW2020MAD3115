@@ -22,6 +22,7 @@
 		AB258844242DEE56000B3A5A /* UI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258843242DEE56000B3A5A /* UI+Extension.swift */; };
 		AB258846242DFC4B000B3A5A /* AddOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258845242DFC4B000B3A5A /* AddOwnerViewController.swift */; };
 		AB258848242DFC56000B3A5A /* AddDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258847242DFC56000B3A5A /* AddDriverViewController.swift */; };
+		AB25884A242E07BB000B3A5A /* AddVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258849242E07BB000B3A5A /* AddVehicleViewController.swift */; };
 		AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */; };
 		AB9998E0242D4652002E2E89 /* DriverData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998DF242D4652002E2E89 /* DriverData.json */; };
 		AB9998E2242D46C5002E2E89 /* CustomerData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998E1242D46C5002E2E89 /* CustomerData.json */; };
@@ -77,6 +78,7 @@
 		AB258843242DEE56000B3A5A /* UI+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+Extension.swift"; sourceTree = "<group>"; };
 		AB258845242DFC4B000B3A5A /* AddOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOwnerViewController.swift; sourceTree = "<group>"; };
 		AB258847242DFC56000B3A5A /* AddDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDriverViewController.swift; sourceTree = "<group>"; };
+		AB258849242E07BB000B3A5A /* AddVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleViewController.swift; sourceTree = "<group>"; };
 		AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		AB9998DF242D4652002E2E89 /* DriverData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverData.json; sourceTree = "<group>"; };
 		AB9998E1242D46C5002E2E89 /* CustomerData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerData.json; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				AB25882C242D9B78000B3A5A /* VehicleListViewController.swift */,
 				AB25883A242DC54E000B3A5A /* VehicleDetailViewController.swift */,
+				AB258849242E07BB000B3A5A /* AddVehicleViewController.swift */,
 			);
 			path = Vehicle;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3D10882420B7D100614770 /* LoginViewController.swift in Sources */,
+				AB25884A242E07BB000B3A5A /* AddVehicleViewController.swift in Sources */,
 				BD3D10AA2421D2A200614770 /* Bus.swift in Sources */,
 				BD3D10AC2421D2B900614770 /* FuelType.swift in Sources */,
 				BDC29ED72420A10200CC26E4 /* HomePageViewController.swift in Sources */,

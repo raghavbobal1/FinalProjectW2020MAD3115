@@ -16,6 +16,7 @@ class VehicleCustomCell: UITableViewCell{
 
 class VehicleListViewController: UIViewController {
        
+    @IBOutlet weak var btnAdd: UIButton!
     @IBOutlet weak var segmentVehicleType: UISegmentedControl!
     @IBOutlet weak var vehicleTable: UITableView!
     var valueArr: [Vehicle] = Array(ObjectManager.carObjects.values)
@@ -28,6 +29,8 @@ class VehicleListViewController: UIViewController {
             self.vehicleTable.dataSource = self
             
             segmentVehicleType.addTarget(self, action: #selector(handleSegmentChange), for: .valueChanged)
+            
+            self.btnAdd.makeFloating()
             // Do any additional setup after loading the view.
         }
         
@@ -47,7 +50,18 @@ class VehicleListViewController: UIViewController {
         }
         
 
-        /*
+    @IBAction func btnAdd(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+         
+         var vcStoryBoardId = "AddVehicleViewController"
+        vcStoryBoardId = "AddVehicleViewController"
+        let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  AddVehicleViewController
+        detailView.type = currentType
+        self.navigationController?.pushViewController(detailView, animated: true)
+    }
+    /*
         // MARK: - Navigation
 
         // In a storyboard-based application, you will often want to do a little preparation before navigation

@@ -9,9 +9,13 @@
 import UIKit
 
 class VehicleCustomCell: UITableViewCell{
+    @IBOutlet weak var labelId: UILabel!
+    @IBOutlet weak var labelSelfDrive: UILabel!
     
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var labelBaseRate: UILabel!
     
+    @IBOutlet weak var labelPerKm: UILabel!
+    @IBOutlet weak var labelIsInsurerd: UILabel!
 }
 
 class VehicleListViewController: UIViewController {
@@ -90,7 +94,28 @@ extension VehicleListViewController: UITableViewDataSource, UITableViewDelegate{
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "vehicleCell") as! VehicleCustomCell
-            cell.nameLabel.text = valueArr[indexPath.row].vehicleId
+            
+            cell.labelId.text = valueArr[indexPath.row].vehicleId
+            
+            cell.labelBaseRate.text =
+                String(valueArr[indexPath.row].baseRate)
+            
+            cell.labelPerKm.text =
+                "\(valueArr[indexPath.row].perKmRate)/KM"
+            
+            if valueArr[indexPath.row].isInsured{
+                cell.labelIsInsurerd.text = "With Insurance"
+            }
+            else{
+                cell.labelIsInsurerd.text = "No Insurance"
+            }
+            
+            if valueArr[indexPath.row].isSelfDrive{
+                cell.labelSelfDrive.text = "Self Drive"
+            }
+            else{
+                cell.labelSelfDrive.text = "Not Self Drive"
+            }
             return cell
         }
         
@@ -109,5 +134,11 @@ extension VehicleListViewController: UITableViewDataSource, UITableViewDelegate{
             self.navigationController?.pushViewController(detailView, animated: true)
     
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+        
+    }
+    
         
     }

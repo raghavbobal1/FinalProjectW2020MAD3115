@@ -8,6 +8,13 @@
 
 import UIKit
 
+
+class PersonCustomCell: UITableViewCell{
+    
+    @IBOutlet weak var labelName: UILabel!
+    
+}
+
 class PersonListViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -35,9 +42,9 @@ extension PersonListViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "personCell")
-        cell?.textLabel?.text = "ram"
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "personCell") as! PersonCustomCell
+        cell.labelName.text = Array(ObjectManager.customerObjects.values)[indexPath.row].firstName
+        return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

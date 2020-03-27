@@ -123,7 +123,7 @@ class LoginViewController: UIViewController
                    }
                    
                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let selectorView = storyboard.instantiateViewController(identifier: "selectionVC") as  SelectionViewController
+                let selectorView = storyboard.instantiateViewController(identifier: "selectorTabVC") as  SelectionNavViewController
                    
                    self.navigationController?.pushViewController(selectorView, animated: true)
                

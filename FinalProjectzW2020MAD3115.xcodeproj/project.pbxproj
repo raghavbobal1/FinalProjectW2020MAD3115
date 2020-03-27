@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB258823242D748E000B3A5A /* SelectionNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258822242D748E000B3A5A /* SelectionNavViewController.swift */; };
 		AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */; };
 		AB9998E0242D4652002E2E89 /* DriverData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998DF242D4652002E2E89 /* DriverData.json */; };
 		AB9998E2242D46C5002E2E89 /* CustomerData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998E1242D46C5002E2E89 /* CustomerData.json */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB258822242D748E000B3A5A /* SelectionNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionNavViewController.swift; sourceTree = "<group>"; };
 		AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		AB9998DF242D4652002E2E89 /* DriverData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverData.json; sourceTree = "<group>"; };
 		AB9998E1242D46C5002E2E89 /* CustomerData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerData.json; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				BD68D6B324241F54001DF318 /* OwnerViewController.swift */,
 				BD09D0BB24241E13000294F8 /* CustomerViewController.swift */,
 				AB9998EB242D51B1002E2E89 /* SelectionViewController.swift */,
+				AB258822242D748E000B3A5A /* SelectionNavViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				BD3D10A12421D1CC00614770 /* TypeNameProtocol.swift in Sources */,
 				BD09D0BC24241E13000294F8 /* CustomerViewController.swift in Sources */,
 				BD3D10A32421D1EB00614770 /* OutputStream.swift in Sources */,
+				AB258823242D748E000B3A5A /* SelectionNavViewController.swift in Sources */,
 				BD91E11F2422ADDF00157F9A /* Contact.swift in Sources */,
 				AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */,
 				AB9998EC242D51B1002E2E89 /* SelectionViewController.swift in Sources */,

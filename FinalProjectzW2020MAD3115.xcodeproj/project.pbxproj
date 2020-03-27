@@ -18,6 +18,7 @@
 		AB25883B242DC54E000B3A5A /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25883A242DC54E000B3A5A /* VehicleDetailViewController.swift */; };
 		AB25883E242DCAB6000B3A5A /* RentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25883D242DCAB6000B3A5A /* RentDetailViewController.swift */; };
 		AB258840242DD344000B3A5A /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25883F242DD344000B3A5A /* UIButton+Extensions.swift */; };
+		AB258842242DD4DC000B3A5A /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258841242DD4DC000B3A5A /* AddPersonViewController.swift */; };
 		AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */; };
 		AB9998E0242D4652002E2E89 /* DriverData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998DF242D4652002E2E89 /* DriverData.json */; };
 		AB9998E2242D46C5002E2E89 /* CustomerData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998E1242D46C5002E2E89 /* CustomerData.json */; };
@@ -69,6 +70,7 @@
 		AB25883A242DC54E000B3A5A /* VehicleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewController.swift; sourceTree = "<group>"; };
 		AB25883D242DCAB6000B3A5A /* RentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentDetailViewController.swift; sourceTree = "<group>"; };
 		AB25883F242DD344000B3A5A /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		AB258841242DD4DC000B3A5A /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 		AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		AB9998DF242D4652002E2E89 /* DriverData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverData.json; sourceTree = "<group>"; };
 		AB9998E1242D46C5002E2E89 /* CustomerData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerData.json; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				AB258831242DB96C000B3A5A /* CustomerDetailViewController.swift */,
 				AB258833242DBF74000B3A5A /* OwnerDetailViewController.swift */,
 				AB258835242DBF83000B3A5A /* DriverDetailViewController.swift */,
+				AB258841242DD4DC000B3A5A /* AddPersonViewController.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				BD91E1192422ADC900157F9A /* Person.swift in Sources */,
 				BD3D10B42421D36700614770 /* Validations.swift in Sources */,
 				BD3D109D2421D19300614770 /* CustomFileHandler.swift in Sources */,
+				AB258842242DD4DC000B3A5A /* AddPersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

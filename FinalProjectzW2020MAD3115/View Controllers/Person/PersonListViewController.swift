@@ -47,7 +47,14 @@ class PersonListViewController: UIViewController {
         self.personTable.reloadData()
     }
     
-
+    @IBAction func btnAddDown(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vcStoryBoardId = "AddPersonViewController"
+        var AddViewView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as! AddPersonViewController
+         self.navigationController?.pushViewController(AddViewView, animated: true)
+    
+    }
+    
     /*
     // MARK: - Navigation
 

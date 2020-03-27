@@ -452,7 +452,11 @@
                         <viewLayoutGuide key="safeArea" id="gjZ-Cx-XgO"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Details" id="Ofb-KP-qsd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ErM-Ra-M3L"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ErM-Ra-M3L">
+                            <connections>
+                                <action selector="btnSaveDown:" destination="e3N-hI-l2i" id="4bm-XJ-8cO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="textEndDate" destination="9ct-Vd-ujS" id="X5d-pg-B14"/>

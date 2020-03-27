@@ -104,6 +104,9 @@ struct ObjectManager{
         
     }
     
+    
+    
+    
 //    func getVehicleById( id: String, typeName: String = "all") -> Vehicle? {
 //        if typeName == "all"{
 //            let vechObjs = ObjectManager.vehicleObjects[Car.typeSName] ?? []

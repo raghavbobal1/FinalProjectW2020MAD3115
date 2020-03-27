@@ -10,9 +10,20 @@ import UIKit
 
 class DriverDetailViewController: UIViewController {
 
+    @IBOutlet weak var labelDriverId: UILabel!
+    var driver: Person?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        guard let driver = self.driver else {
+            return
+        }
+        var driverObj  = ObjectManager.getInstance().getDriverById(id: driver.id)
+        
+        guard let d = driverObj  else {
+            return
+        }
+        self.labelDriverId.text = d.id
+        
         // Do any additional setup after loading the view.
     }
     

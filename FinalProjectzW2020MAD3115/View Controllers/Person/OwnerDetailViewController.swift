@@ -9,10 +9,21 @@
 import UIKit
 
 class OwnerDetailViewController: UIViewController {
-
+    @IBOutlet weak var labelOwnerId: UILabel!
+    
+    var owner: Person?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        guard let owner = self.owner else {
+            return
+        }
+        var ownerObj  = ObjectManager.getInstance().getOwnerById(id: owner.id)
+        
+        guard let o = ownerObj  else {
+            return
+        }
+        self.labelOwnerId.text = o.id
+        
         // Do any additional setup after loading the view.
     }
     

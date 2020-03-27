@@ -118,6 +118,7 @@
 		AB258830242DB953000B3A5A /* Person */ = {
 			isa = PBXGroup;
 			children = (
+				AB25882A242D8DE4000B3A5A /* PersonListViewController.swift */,
 				AB258831242DB96C000B3A5A /* CustomerDetailViewController.swift */,
 				AB258833242DBF74000B3A5A /* OwnerDetailViewController.swift */,
 				AB258835242DBF83000B3A5A /* DriverDetailViewController.swift */,
@@ -146,7 +147,6 @@
 				BD3D10872420B7D100614770 /* LoginViewController.swift */,
 				BD09D0B7242349B5000294F8 /* SignUpViewController.swift */,
 				AB258822242D748E000B3A5A /* SelectionNavViewController.swift */,
-				AB25882A242D8DE4000B3A5A /* PersonListViewController.swift */,
 				AB25882C242D9B78000B3A5A /* VehicleListViewController.swift */,
 				AB25882E242DB14E000B3A5A /* RentListViewController.swift */,
 				AB258837242DC0F5000B3A5A /* CustomTabBarViewController.swift */,

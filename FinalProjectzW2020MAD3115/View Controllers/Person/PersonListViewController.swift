@@ -84,9 +84,15 @@ extension PersonListViewController: UITableViewDataSource, UITableViewDelegate{
             self.navigationController?.pushViewController(detailView, animated: true)
             
         case Owner.typeSName:
-             vcStoryBoardId = "CustomerDetailViewController"
+             vcStoryBoardId = "OwnerDetailViewController"
+            let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  OwnerDetailViewController
+            detailView.owner = self.valueArr[indexPath.row]
+            self.navigationController?.pushViewController(detailView, animated: true)
         default:
-             vcStoryBoardId = "CustomerDetailViewController"
+             vcStoryBoardId = "DriverDetailViewController"
+            let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  DriverDetailViewController
+            detailView.driver = self.valueArr[indexPath.row]
+            self.navigationController?.pushViewController(detailView, animated: true)
         }
         
     }

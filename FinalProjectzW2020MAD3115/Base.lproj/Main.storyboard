@@ -559,6 +559,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="sWA-lI-FrO"/>
                     </view>
+                    <connections>
+                        <outlet property="labelOwnerId" destination="4ci-1S-Sm5" id="i3k-zx-nYS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZx-Qr-Ggp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -583,6 +586,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Nm6-oq-ZA6"/>
                     </view>
+                    <connections>
+                        <outlet property="labelDriverId" destination="IHt-70-XtI" id="vcv-It-B03"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0V-Ng-ibb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

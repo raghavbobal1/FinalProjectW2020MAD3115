@@ -540,10 +540,10 @@
             </objects>
             <point key="canvasLocation" x="379.71014492753625" y="2746.875"/>
         </scene>
-        <!--View Controller-->
+        <!--Owner Detail View Controller-->
         <scene sceneID="hbO-yv-a5I">
             <objects>
-                <viewController id="pZs-7I-D9N" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OwnerDetailViewController" id="pZs-7I-D9N" customClass="OwnerDetailViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K7m-df-OPg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -562,12 +562,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZx-Qr-Ggp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2708.6956521739135" y="2746.875"/>
+            <point key="canvasLocation" x="1823" y="2757"/>
         </scene>
-        <!--View Controller-->
+        <!--Driver Detail View Controller-->
         <scene sceneID="7XH-lW-MZp">
             <objects>
-                <viewController id="BL6-f8-DeS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DriverDetailViewController" id="BL6-f8-DeS" customClass="DriverDetailViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IMM-b8-A7j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -586,7 +586,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0V-Ng-ibb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3581.1594202898555" y="2756.9196428571427"/>
+            <point key="canvasLocation" x="3074" y="2757"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CZO-b6-8WS">

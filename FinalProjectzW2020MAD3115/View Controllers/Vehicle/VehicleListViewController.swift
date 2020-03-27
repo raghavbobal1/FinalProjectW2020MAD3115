@@ -65,6 +65,9 @@ class VehicleListViewController: UIViewController {
         let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  AddVehicleViewController
         detailView.type = currentType
         self.navigationController?.pushViewController(detailView, animated: true)
+        
+        
+        
     }
     /*
         // MARK: - Navigation

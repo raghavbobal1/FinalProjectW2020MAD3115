@@ -1986,6 +1986,14 @@
                         <viewLayoutGuide key="safeArea" id="GCh-xT-oCl"/>
                     </view>
                     <navigationItem key="navigationItem" id="Grm-eB-Mc5"/>
+                    <connections>
+                        <outlet property="labelDOB" destination="rzy-DU-yDN" id="2Ts-AZ-EZi"/>
+                        <outlet property="labelDrivingLicence" destination="0lW-ug-VRh" id="CQd-dM-6qb"/>
+                        <outlet property="labelEmail" destination="qtb-9W-qkc" id="rui-wV-TBH"/>
+                        <outlet property="labelPhoneNumber" destination="e1m-W9-GpZ" id="SWy-Zd-805"/>
+                        <outlet property="lableFullName" destination="sDN-Ok-ejc" id="6UO-KL-t1S"/>
+                        <outlet property="tblVehicles" destination="d2P-nz-Zco" id="dG8-iE-WhA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcB-2Z-FLv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,13 @@
 import UIKit
 
 class DriverDetailViewController: UIViewController {
-
+    @IBOutlet weak var labelEmail: UILabel!
+    @IBOutlet weak var labelDrivingLicence: UILabel!
+    @IBOutlet weak var tblVehicles: UITableView!
+    
+    @IBOutlet weak var labelPhoneNumber: UILabel!
+    @IBOutlet weak var labelDOB: UILabel!
+    @IBOutlet weak var lableFullName: UILabel!
     var driver: Person?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +27,13 @@ class DriverDetailViewController: UIViewController {
         guard let d = driverObj  else {
             return
         }
+        
+        self.lableFullName.text = d.fullName
+        self.labelDOB.text
+            = d.birthDate?.printFormat()
+        self.labelEmail.text = d.contact.emailId
+        self.labelPhoneNumber.text = d.contact.mobileNumber
+        self.labelDrivingLicence.text = d.drivingLicenceNumber
         
         // Do any additional setup after loading the view.
     }

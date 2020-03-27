@@ -63,7 +63,7 @@ We have used the following packages and classes to implement the above given str
 [Click here for JIRA link](https://abhisheksj.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=MAD31152&view=planning&selectedIssue=MAD31152-21&issueLimit=100)
 
 ## PROJECT OUTPUT
-[Click here to view the project screenshots](https://drive.google.com/file/d/1Hn2lSdz1Saiqw8kweWSH9WXm6SgEawsP/view?usp=sharing)
+[Click here to view the project screenshots](https://drive.google.com/file/d/1TLObANYsj_Lksoumv7xiNmKql33ZVXXk/view?usp=sharing)
 ## REFERENCES
 * [Swift Developer Blog](http://swiftdeveloperblog.com/code-examples/validate-email-address-code-example-in-swift/) - For validating the email of customers.
 * [Jsonplaceholder](https://jsonplaceholder.typicode.com/) - JSON reference

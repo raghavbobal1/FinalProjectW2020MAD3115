@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectionNavViewController: UITabBarController {
+class SelectionNavViewController: MySubclassedTabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

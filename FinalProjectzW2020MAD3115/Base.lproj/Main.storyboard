@@ -670,7 +670,6 @@
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="iamgeProfile" destination="jQi-pn-RBD" id="RYc-r5-B0Y"/>
@@ -692,7 +691,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.93333333333333335" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="L7v-wX-EgF" firstAttribute="leading" secondItem="vCn-YN-xDS" secondAttribute="leading" constant="20" id="0QU-bM-Lfu"/>
                             <constraint firstItem="FzX-ep-ONR" firstAttribute="leading" secondItem="vCn-YN-xDS" secondAttribute="leading" constant="10" id="18K-cD-bZ9"/>

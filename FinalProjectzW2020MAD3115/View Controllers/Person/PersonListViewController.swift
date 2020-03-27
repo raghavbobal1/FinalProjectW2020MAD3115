@@ -110,7 +110,7 @@ extension PersonListViewController: UITableViewDataSource, UITableViewDelegate{
         
         
         cell.layer.borderWidth = 1.0
-        cell.layer.borderColor = CGColor(srgbRed: 0, green: 0.749, blue: 0.7882, alpha: 1.0)
+//        cell.layer.borderColor =
         return cell
     }
     

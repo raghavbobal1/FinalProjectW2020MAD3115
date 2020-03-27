@@ -10,8 +10,12 @@ import UIKit
 
 class RentCustomCell: UITableViewCell{
     
-    @IBOutlet weak var labelID: UILabel!
+    @IBOutlet weak var labelId: UILabel!
     
+    @IBOutlet weak var labelKmDriven: UILabel!
+    
+    @IBOutlet weak var labelTotalBill: UILabel!
+    @IBOutlet weak var labelDays: UILabel!
     
 }
 
@@ -19,7 +23,6 @@ class RentListViewController: UIViewController {
     
     @IBOutlet weak var tableRent: UITableView!
     
-        
     @IBOutlet weak var btnAdd: UIButton!
     
     override func viewDidLoad() {
@@ -67,7 +70,11 @@ extension RentListViewController: UITableViewDataSource, UITableViewDelegate{
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "rentCell") as! RentCustomCell
-            cell.labelID.text = Array(ObjectManager.vehicleRentObjects.values)[indexPath.row].id
+            var obj = Array(ObjectManager.vehicleRentObjects.values)[indexPath.row]
+            cell.labelId.text = obj.id
+            cell.labelDays.text  = "\(obj.calculateNumberOfDays()) Days"
+            cell.labelKmDriven.text = obj.kmDriven.distanceFormat()
+            cell.labelTotalBill.text = obj.totalBill.priceFormat()
             return cell
         }
         

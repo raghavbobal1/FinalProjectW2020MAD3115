@@ -9,7 +9,6 @@
 import UIKit
 
 class RentDetailViewController: UIViewController {
-    @IBOutlet weak var labelRentId: UILabel!
     var vehicleRent: VehicleRent?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +16,6 @@ class RentDetailViewController: UIViewController {
         guard let vehicleRent = self.vehicleRent else {
                     return
                 }
-        self.labelRentId.text = vehicleRent.id
         // Do any additional setup after loading the view.
     }
     

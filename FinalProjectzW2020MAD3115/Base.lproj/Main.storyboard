@@ -360,25 +360,13 @@
                     <view key="view" contentMode="scaleToFill" id="c2y-TT-uus">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ib4-FD-L2n">
-                                <rect key="frame" x="186" y="176" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XjL-J2-Tj9"/>
                     </view>
-                    <connections>
-                        <outlet property="labelRentId" destination="Ib4-FD-L2n" id="2Eq-6L-zub"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JS9-Lc-8OJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11584.057971014494" y="2743.5267857142858"/>
+            <point key="canvasLocation" x="10019" y="2725"/>
         </scene>
         <!--Add Details-->
         <scene sceneID="beA-GN-jTH">
@@ -927,11 +915,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-j2-ryD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="supercar-wallpapers-bugatti-2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-j2-ryD">
                                 <rect key="frame" x="0.0" y="54" width="414" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="9DV-Iq-czF"/>
                                 </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFU-EJ-Se2">
                                 <rect key="frame" x="20" y="214" width="374" height="390"/>
@@ -2170,6 +2159,7 @@
         <image name="register" width="40" height="40"/>
         <image name="rent" width="40" height="40"/>
         <image name="settings" width="40" height="40"/>
+        <image name="supercar-wallpapers-bugatti-2" width="1280" height="800"/>
         <image name="vehicle" width="40" height="40"/>
     </resources>
 </document>

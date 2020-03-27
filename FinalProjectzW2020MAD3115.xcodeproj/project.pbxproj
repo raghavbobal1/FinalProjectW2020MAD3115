@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB258823242D748E000B3A5A /* SelectionNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258822242D748E000B3A5A /* SelectionNavViewController.swift */; };
+		AB25882B242D8DE4000B3A5A /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25882A242D8DE4000B3A5A /* PersonListViewController.swift */; };
 		AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */; };
 		AB9998E0242D4652002E2E89 /* DriverData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998DF242D4652002E2E89 /* DriverData.json */; };
 		AB9998E2242D46C5002E2E89 /* CustomerData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998E1242D46C5002E2E89 /* CustomerData.json */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		AB258822242D748E000B3A5A /* SelectionNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionNavViewController.swift; sourceTree = "<group>"; };
+		AB25882A242D8DE4000B3A5A /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 		AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		AB9998DF242D4652002E2E89 /* DriverData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverData.json; sourceTree = "<group>"; };
 		AB9998E1242D46C5002E2E89 /* CustomerData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerData.json; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				BD09D0BB24241E13000294F8 /* CustomerViewController.swift */,
 				AB9998EB242D51B1002E2E89 /* SelectionViewController.swift */,
 				AB258822242D748E000B3A5A /* SelectionNavViewController.swift */,
+				AB25882A242D8DE4000B3A5A /* PersonListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				BD3D10AE2421D2D900614770 /* MotorCycle.swift in Sources */,
 				BD3D10B72421D39200614770 /* String+Extensions.swift in Sources */,
 				BD91E1272422BF6B00157F9A /* Extension+UITextField .swift in Sources */,
+				AB25882B242D8DE4000B3A5A /* PersonListViewController.swift in Sources */,
 				BD09D0B8242349B5000294F8 /* SignUpViewController.swift in Sources */,
 				BD09D0BA24234C23000294F8 /* PersonDetailViewController.swift in Sources */,
 				BD91E1212422ADE300157F9A /* Driver.swift in Sources */,

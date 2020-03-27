@@ -655,12 +655,47 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2NL-lD-hs2">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2NL-lD-hs2">
                                         <rect key="frame" x="105" y="149" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxO-gG-EPq">
                                         <rect key="frame" x="161" y="149" width="169" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAX-8g-OGn">
+                                        <rect key="frame" x="5" y="187" width="354" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.10000000000000001" id="av5-Ab-59U"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAf-Se-it0">
+                                        <rect key="frame" x="8" y="196" width="51" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mail" translatesAutoresizingMaskIntoConstraints="NO" id="NnM-A0-nV3">
+                                        <rect key="frame" x="18" y="214" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prakash@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="age-Xc-2gi">
+                                        <rect key="frame" x="56" y="219" width="156" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="f9Q-EL-tlU">
+                                        <rect key="frame" x="18" y="248" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="437182930" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lef-JQ-C2x">
+                                        <rect key="frame" x="56" y="253" width="137" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -670,10 +705,13 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="Ajk-fh-vQc"/>
+                                    <constraint firstAttribute="trailing" secondItem="EAX-8g-OGn" secondAttribute="trailing" constant="5" id="ImF-Sk-nTV"/>
                                     <constraint firstItem="fUn-g6-j7k" firstAttribute="centerX" secondItem="5AJ-Zx-ucw" secondAttribute="centerX" id="Kkd-Qu-JCW"/>
+                                    <constraint firstItem="EAX-8g-OGn" firstAttribute="top" secondItem="2NL-lD-hs2" secondAttribute="bottom" constant="5" id="Nqp-P2-4DQ"/>
                                     <constraint firstItem="glM-lN-tGC" firstAttribute="top" secondItem="fUn-g6-j7k" secondAttribute="bottom" constant="5" id="NrP-Zb-HtV"/>
                                     <constraint firstItem="glM-lN-tGC" firstAttribute="centerX" secondItem="5AJ-Zx-ucw" secondAttribute="centerX" id="UGY-EP-ZVh"/>
                                     <constraint firstItem="fUn-g6-j7k" firstAttribute="top" secondItem="5AJ-Zx-ucw" secondAttribute="top" constant="5" id="dal-QO-3hx"/>
+                                    <constraint firstItem="EAX-8g-OGn" firstAttribute="leading" secondItem="5AJ-Zx-ucw" secondAttribute="leading" constant="5" id="fz8-jt-B2w"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1732,7 +1770,9 @@
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="eye.slash" catalog="system" width="64" height="42"/>
         <image name="homepagelogo" width="3923" height="3704"/>
+        <image name="mail" width="512" height="512"/>
         <image name="person" width="40" height="40"/>
+        <image name="phone" width="512" height="512"/>
         <image name="plus" width="30" height="30"/>
         <image name="rent" width="40" height="40"/>
         <image name="settings" width="40" height="40"/>

@@ -10,7 +10,6 @@ import UIKit
 
 class CustomerDetailViewController: UIViewController {
     
-    @IBOutlet weak var labelCustomerId: UILabel!
     var customer: Person?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +21,6 @@ class CustomerDetailViewController: UIViewController {
         guard let cust = customerObj  else {
             return
         }
-        self.labelCustomerId.text = cust.id
-        
         // Do any additional setup after loading the view.
     }
     

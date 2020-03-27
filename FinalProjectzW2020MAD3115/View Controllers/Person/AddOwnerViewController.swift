@@ -177,14 +177,14 @@ class AddOwnerViewController: UIViewController {
               }
               
           func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            return ObjectManager.getAllUnBookedVehicles().count
+            return ObjectManager.getAllUnOwnedVehicles().count
           }
            
            func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return ObjectManager.getAllUnBookedVehicles()[row].vehicleId
+            return ObjectManager.getAllUnOwnedVehicles()[row].vehicleId
            }
               
            func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-            self.textVehicle.text = "\(ObjectManager.getAllUnBookedVehicles()[row].vehicleId)"
+            self.textVehicle.text = "\(ObjectManager.getAllUnOwnedVehicles()[row].vehicleId)"
            }
     }

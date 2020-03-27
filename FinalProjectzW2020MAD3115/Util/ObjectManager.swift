@@ -64,14 +64,45 @@ struct ObjectManager{
         
     }
     
-    static func getAllUnBookedVehicles() -> [Vehicle]{
-        
+    static func getAllUnOwnedVehicles() -> [Vehicle]{
         var allBookedVehiclesId = [String]()
         for (_,owner) in self.ownerObjects{
             for(key,vl) in owner.vehicleList{
                 allBookedVehiclesId.append(key)
             }
             
+        }
+        
+        var vehList = [Vehicle]()
+        for (k1,v) in ObjectManager.carObjects{
+            if allBookedVehiclesId.contains(k1){
+               continue
+            }
+            vehList.append(v)
+        }
+        
+        for (k2,a) in ObjectManager.busObjects{
+            if allBookedVehiclesId.contains(k2){
+               continue
+            }
+                   vehList.append(a)
+               }
+        for (k3,b) in ObjectManager.motorCycleObjects{
+            if allBookedVehiclesId.contains(k3){
+               continue
+            }
+                   vehList.append(b)
+        }
+        
+        return vehList
+        
+    }
+    
+    static func getAllUnBookedVehicles() -> [Vehicle]{
+        
+        var allBookedVehiclesId = [String]()
+        for (_,rent) in self.vehicleRentObjects{
+            allBookedVehiclesId.append(rent.vehicle.vehicleId)
         }
         
         var vehList = [Vehicle]()

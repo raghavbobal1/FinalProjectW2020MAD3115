@@ -20,6 +20,8 @@
 		AB258840242DD344000B3A5A /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB25883F242DD344000B3A5A /* UIButton+Extensions.swift */; };
 		AB258842242DD4DC000B3A5A /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258841242DD4DC000B3A5A /* AddPersonViewController.swift */; };
 		AB258844242DEE56000B3A5A /* UI+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258843242DEE56000B3A5A /* UI+Extension.swift */; };
+		AB258846242DFC4B000B3A5A /* AddOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258845242DFC4B000B3A5A /* AddOwnerViewController.swift */; };
+		AB258848242DFC56000B3A5A /* AddDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB258847242DFC56000B3A5A /* AddDriverViewController.swift */; };
 		AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */; };
 		AB9998E0242D4652002E2E89 /* DriverData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998DF242D4652002E2E89 /* DriverData.json */; };
 		AB9998E2242D46C5002E2E89 /* CustomerData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB9998E1242D46C5002E2E89 /* CustomerData.json */; };
@@ -73,6 +75,8 @@
 		AB25883F242DD344000B3A5A /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		AB258841242DD4DC000B3A5A /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 		AB258843242DEE56000B3A5A /* UI+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+Extension.swift"; sourceTree = "<group>"; };
+		AB258845242DFC4B000B3A5A /* AddOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOwnerViewController.swift; sourceTree = "<group>"; };
+		AB258847242DFC56000B3A5A /* AddDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDriverViewController.swift; sourceTree = "<group>"; };
 		AB9998D8242D3BB4002E2E89 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		AB9998DF242D4652002E2E89 /* DriverData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriverData.json; sourceTree = "<group>"; };
 		AB9998E1242D46C5002E2E89 /* CustomerData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomerData.json; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				AB258833242DBF74000B3A5A /* OwnerDetailViewController.swift */,
 				AB258835242DBF83000B3A5A /* DriverDetailViewController.swift */,
 				AB258841242DD4DC000B3A5A /* AddPersonViewController.swift */,
+				AB258845242DFC4B000B3A5A /* AddOwnerViewController.swift */,
+				AB258847242DFC56000B3A5A /* AddDriverViewController.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 				BD91E11B2422ADD400157F9A /* Customer.swift in Sources */,
 				BD3D10A62421D26F00614770 /* Vehicle.swift in Sources */,
 				AB258834242DBF74000B3A5A /* OwnerDetailViewController.swift in Sources */,
+				AB258848242DFC56000B3A5A /* AddDriverViewController.swift in Sources */,
 				BD3D10B92421D3B200614770 /* Float+Extensions.swift in Sources */,
 				BD3D10A12421D1CC00614770 /* TypeNameProtocol.swift in Sources */,
 				AB258838242DC0F5000B3A5A /* CustomTabBarViewController.swift in Sources */,
@@ -388,6 +395,7 @@
 				BD91E11F2422ADDF00157F9A /* Contact.swift in Sources */,
 				AB9998D9242D3BB4002E2E89 /* ObjectManager.swift in Sources */,
 				BD91E1232422ADED00157F9A /* Owner.swift in Sources */,
+				AB258846242DFC4B000B3A5A /* AddOwnerViewController.swift in Sources */,
 				AB258836242DBF83000B3A5A /* DriverDetailViewController.swift in Sources */,
 				BDC29ED52420A10200CC26E4 /* SceneDelegate.swift in Sources */,
 				AB258840242DD344000B3A5A /* UIButton+Extensions.swift in Sources */,

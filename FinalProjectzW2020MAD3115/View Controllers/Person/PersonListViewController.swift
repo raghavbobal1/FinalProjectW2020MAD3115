@@ -58,11 +58,24 @@ class PersonListViewController: UIViewController {
         
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vcStoryBoardId = "AddPersonViewController"
-        var AddViewView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as! AddPersonViewController
+       
         
-        AddViewView.personType = currentType
-         self.navigationController?.pushViewController(AddViewView, animated: true)
+        var vcStoryBoardId = "AddPersonViewController"
+        switch currentType {
+               case Customer.typeSName:
+                   vcStoryBoardId = "AddPersonViewController"
+                   let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  AddPersonViewController
+                   self.navigationController?.pushViewController(detailView, animated: true)
+                   
+               case Owner.typeSName:
+                    vcStoryBoardId = "AddOwnerViewController"
+                   let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  AddOwnerViewController
+                   self.navigationController?.pushViewController(detailView, animated: true)
+               default:
+                    vcStoryBoardId = "AddDriverViewController"
+                   let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  AddDriverViewController
+                   self.navigationController?.pushViewController(detailView, animated: true)
+               }
     
     }
     

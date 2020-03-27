@@ -16,7 +16,7 @@ class Owner : Person
     var url: String
     var vehicleList = [String: Vehicle]()
     
-    init(id: String, firstName: String, lastName: String, gender: Gender, birthDate: Date?, age:Int,
+    init(id: String, firstName: String, lastName: String, gender: Gender, birthDate: Date?,
         userName: String, password: String, contact: Contact, companyTitle: String,  url: String,
         vehicleList: [String: Vehicle])
     {

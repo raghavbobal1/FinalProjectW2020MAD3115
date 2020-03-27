@@ -55,7 +55,7 @@ class AddPersonViewController: UIViewController {
         self.textPhoneNumber.animateToColor(selectedColor: UIColor.black)
         
         self.textFirstName.animateToColor(selectedColor: UIColor.black)
-
+        self.textPassword.animateToColor(selectedColor: .black)
         
 
     }
@@ -65,7 +65,7 @@ class AddPersonViewController: UIViewController {
         let firstName = self.textFirstName.text!
                
        if firstName.isEmpty {
-//        self.view.showToast(toastMessage: "FirstName can't be Empty", duration: 1)
+        self.view.showToast(toastMessage: "FirstName can't be Empty", duration: 1)
             self.textFirstName.animateToColor(selectedColor: UIColor.red)
            return
        }
@@ -128,9 +128,13 @@ class AddPersonViewController: UIViewController {
         let birthDate = Date.ofStr(dateString: birthDateString) ?? Date()
         
         
+    
         
-        var customer = Customer(id: ObjectManager.getInstance().getRandomID(), firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate,  userName:"testUser" , password: password, contact: contact!)
-        ObjectManager.customerObjects.updateValue(customer, forKey: customer.id)
+       
+            var customer = Customer(id: ObjectManager.getInstance().getRandomID(), firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate,  userName:"testUser" , password: password, contact: contact!)
+            ObjectManager.customerObjects.updateValue(customer, forKey: customer.id)
+            
+        
         self.navigationController?.popViewController(animated: true)
     }
     

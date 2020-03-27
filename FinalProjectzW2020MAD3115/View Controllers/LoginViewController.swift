@@ -66,7 +66,7 @@ class LoginViewController: UIViewController
      self.defaultConf()
                print(self.textFieldUsername.text)
                guard let username = self.textFieldUsername.text  else{
-                   self.usernameErrorLabel.text  = "Username can't be empty"
+                self.view.showToast(toastMessage: "Username cant be empty", duration: 1.5)
                    return
                }
                if username.isEmpty{
@@ -80,7 +80,7 @@ class LoginViewController: UIViewController
                    color.duration = 0.7
                    color.repeatCount = 1
 
-                   self.usernameErrorLabel.text  = "Username can't be empty"
+                self.view.showToast(toastMessage: "Username cant be empty", duration: 1.7)
                    self.textFieldUsername.layer.borderColor =  myColor.cgColor
                    self.textFieldUsername.layer.borderWidth = 1.0
                    self.textFieldUsername.layer.add(color, forKey: "borderColor")
@@ -88,7 +88,7 @@ class LoginViewController: UIViewController
                }
                
                guard let password = self.textFieldPassword.text  else{
-                   self.passwordErrorLabel.text  = "Password can't be empty"
+                   self.view.showToast(toastMessage: "Password cant be empty", duration: 1.7)
                    return
                }
                
@@ -104,7 +104,7 @@ class LoginViewController: UIViewController
                               color.duration = 0.7
                               color.repeatCount = 1
 
-                  self.passwordErrorLabel.text  = "Password can't be empty"
+                  self.view.showToast(toastMessage: "Password cant be empty", duration: 1.7)
                   self.textFieldPassword.layer.borderColor =  myColor.cgColor
                   self.textFieldPassword.layer.borderWidth = 1.0
                   self.textFieldPassword.layer.add(color, forKey: "borderColor")

@@ -33,6 +33,11 @@ class VehicleListViewController: UIViewController {
             self.btnAdd.makeFloating()
             // Do any additional setup after loading the view.
         }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.handleSegmentChange()
+    }
         
         @objc func handleSegmentChange()  {
             switch segmentVehicleType.selectedSegmentIndex {

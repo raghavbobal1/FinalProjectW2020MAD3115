@@ -99,6 +99,11 @@ struct ObjectManager{
         
     }
     
+    static func getAllFreeDrivers() -> [Driver]{
+        return Array(ObjectManager.driverObjects.values)
+        
+    }
+    
 //    func getVehicleById( id: String, typeName: String = "all") -> Vehicle? {
 //        if typeName == "all"{
 //            let vechObjs = ObjectManager.vehicleObjects[Car.typeSName] ?? []

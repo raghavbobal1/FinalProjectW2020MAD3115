@@ -30,7 +30,7 @@ class Vehicle:  TypeName , Hashable
         return lhs.hashValue == rhs.hashValue
     }
     
-    init(vehicleId: String, description: String?, manufacturer: String, fuelType: FuelType,  isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String?, numberOfSeat: Int, baseRate: Float, perKmRate: Float, driver:Driver) {
+    init(vehicleId: String, description: String?, manufacturer: String, fuelType: FuelType,  isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String?, numberOfSeat: Int, baseRate: Float, perKmRate: Float, driver:Driver?) {
         self.vehicleId = vehicleId
         self.description = description
         self.manufacturer = manufacturer

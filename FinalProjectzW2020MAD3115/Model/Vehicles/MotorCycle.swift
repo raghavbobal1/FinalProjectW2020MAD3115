@@ -16,7 +16,7 @@ class MotorCycle: Vehicle
     var topSpeed: Int = 0
     var mileage: Int = 0
     
-    init(vehicleId: String, description: String?, manufacturer: String, fuelType: FuelType, topSpeed: Int, mileage: Int, isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String?, numberOfSeat: Int, baseRate: Float, perKmRate: Float, driver: Driver)
+    init(vehicleId: String, description: String?, manufacturer: String, fuelType: FuelType, topSpeed: Int, mileage: Int, isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String?, numberOfSeat: Int, baseRate: Float, perKmRate: Float, driver: Driver?)
   {
     
     self.topSpeed = topSpeed

@@ -1539,10 +1539,21 @@
                     <navigationItem key="navigationItem" title="Add Details" id="tK0-cG-QpN">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="gnZ-xy-k7u">
                             <connections>
-                                <action selector="btnSaveDown:" destination="9tO-ul-qlI" id="DTr-YN-jer"/>
+                                <action selector="btnSave:" destination="9tO-ul-qlI" id="4KJ-uf-Yz6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segmentFuelType" destination="qPW-Jw-ULT" id="f7P-46-KZb"/>
+                        <outlet property="segmentHasInsurance" destination="HXu-nq-Dv2" id="6ey-fT-kTV"/>
+                        <outlet property="segmentIsSelfDrive" destination="gUv-Nb-OHR" id="TQ0-Wg-7aG"/>
+                        <outlet property="textBaseRate" destination="cCH-N0-nNI" id="hVM-0N-L13"/>
+                        <outlet property="textDescription" destination="vof-qQ-6KP" id="nU3-MF-d3O"/>
+                        <outlet property="textDriver" destination="Ccp-hP-WFN" id="25g-ac-C6P"/>
+                        <outlet property="textInsuranceProvider" destination="Dvc-Kl-Fgh" id="7qu-ZG-o9u"/>
+                        <outlet property="textManufacturer" destination="tFC-5D-bGv" id="NW5-9a-cg1"/>
+                        <outlet property="textPerKM" destination="a53-xK-SFO" id="UR6-tt-nrG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJ1-MX-zGf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

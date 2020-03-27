@@ -14,7 +14,7 @@ class Car: Vehicle
     var carColor: String
     
    
-    init(vehicleId: String, description: String?, manufacturer: String, fuelType: FuelType, carColor: String, carType: String, isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String?, numberOfSeat: Int, baseRate: Float, perKmRate: Float, driver: Driver)
+    init(vehicleId: String, description: String?, manufacturer: String, fuelType: FuelType, carColor: String, carType: String, isSelfDrive: Bool, isInsured: Bool, insuranceProviderName: String?, numberOfSeat: Int, baseRate: Float, perKmRate: Float, driver: Driver?)
   {
     self.carType=carType
     self.carColor=carColor

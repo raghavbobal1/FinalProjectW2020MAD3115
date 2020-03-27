@@ -48,9 +48,19 @@ class VehicleDetailViewController: UIViewController {
         
         self.labelDriverName.text = vehicle.driver?.fullName ?? "Driver not Assigned"
         
+        if self.labelDriverName.text != "Driver not Assigned"{
+            
+            let singleTap = UITapGestureRecognizer(target: self, action: #selector(tapDetectedDriver))
+                   labelDriverName.isUserInteractionEnabled = true
+                   labelDriverName.addGestureRecognizer(singleTap)
+        }
         
         if let owner = ObjectManager.getOwnerForVehicle(id: vehicle.vehicleId){
             self.labelOwnerName.text = owner.fullName
+            
+            let singleTap = UITapGestureRecognizer(target: self, action: #selector(tapDetectedOwner))
+            labelOwnerName.isUserInteractionEnabled = true
+            labelOwnerName.addGestureRecognizer(singleTap)
             
         }
         else{
@@ -60,6 +70,27 @@ class VehicleDetailViewController: UIViewController {
         
     }
     
+    @objc func tapDetectedDriver() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      var vcStoryBoardId = "DriverDetailViewController"
+                let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  DriverDetailViewController
+        detailView.driver = vehicle?.driver!
+                self.navigationController?.pushViewController(detailView, animated: true)
+
+
+        
+    }
+    
+      @objc func tapDetectedOwner() {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+          var vcStoryBoardId = "OwnerDetailViewController"
+                    let detailView = storyboard.instantiateViewController(identifier: vcStoryBoardId) as!  OwnerDetailViewController
+        detailView.owner = ObjectManager.getOwnerForVehicle(id: vehicle!.vehicleId)
+                    self.navigationController?.pushViewController(detailView, animated: true)
+
+
+            
+        }
 
     /*
     // MARK: - Navigation

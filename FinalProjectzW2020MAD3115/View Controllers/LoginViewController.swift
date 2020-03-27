@@ -55,7 +55,7 @@ class LoginViewController: UIViewController
     func validateCustomer(username: String, password: String) -> Bool{
         
         for (_,cus) in ObjectManager.customerObjects{
-            if username == cus.userName{
+            if username == cus.contact.emailId{
                 return PasswordUtil.validate(plainPassword: password, salt: cus.salt, hashPassword: cus.password)
             }
         }

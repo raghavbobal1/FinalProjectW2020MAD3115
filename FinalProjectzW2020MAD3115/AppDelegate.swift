@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         ObjectManager.getInstance().loadData()
         print(ObjectManager.customerObjects)
+        
+        UITabBar.appearance().barTintColor = .black
+        UITabBar.appearance().tintColor = .red
         return true
     }
 

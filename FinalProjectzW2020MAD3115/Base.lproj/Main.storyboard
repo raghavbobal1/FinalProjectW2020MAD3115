@@ -543,26 +543,76 @@
             </objects>
             <point key="canvasLocation" x="3638" y="510"/>
         </scene>
-        <!--Item-->
+        <!--Rent List View Controller-->
         <scene sceneID="HiR-VI-A3z">
             <objects>
-                <viewController id="Ltb-W8-m6q" sceneMemberID="viewController">
+                <viewController id="Ltb-W8-m6q" customClass="RentListViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cJ7-7F-nfp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rents" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyr-gw-BEY">
+                                <rect key="frame" x="20" y="54" width="374" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IpI-r3-SQ6">
+                                <rect key="frame" x="10" y="97.5" width="394" height="715.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rentCell" id="DdO-eo-rXG" customClass="RentCustomCell" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="394" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DdO-eo-rXG" id="vb7-S0-aW2">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L0w-dm-o9e">
+                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCf-Cd-sVK">
+                                                    <rect key="frame" x="50" y="11" width="42" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelID" destination="WCf-Cd-sVK" id="IOp-5U-rOb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IpI-r3-SQ6" firstAttribute="top" secondItem="Wyr-gw-BEY" secondAttribute="bottom" constant="10" id="3rG-pc-NMg"/>
+                            <constraint firstItem="OmQ-4d-5Yy" firstAttribute="bottom" secondItem="IpI-r3-SQ6" secondAttribute="bottom" id="CMS-Fv-wDi"/>
+                            <constraint firstItem="IpI-r3-SQ6" firstAttribute="leading" secondItem="OmQ-4d-5Yy" secondAttribute="leading" constant="10" id="Rsd-Ko-RMr"/>
+                            <constraint firstItem="OmQ-4d-5Yy" firstAttribute="trailing" secondItem="Wyr-gw-BEY" secondAttribute="trailing" constant="20" id="UPb-pO-LgE"/>
+                            <constraint firstItem="Wyr-gw-BEY" firstAttribute="top" secondItem="OmQ-4d-5Yy" secondAttribute="top" constant="10" id="aEa-hJ-28V"/>
+                            <constraint firstItem="OmQ-4d-5Yy" firstAttribute="trailing" secondItem="IpI-r3-SQ6" secondAttribute="trailing" constant="10" id="epn-Dz-chc"/>
+                            <constraint firstItem="Wyr-gw-BEY" firstAttribute="leading" secondItem="OmQ-4d-5Yy" secondAttribute="leading" constant="20" id="kRz-7x-6Dt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OmQ-4d-5Yy"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="XAT-es-tSh"/>
+                    <tabBarItem key="tabBarItem" title="" image="rent" id="XAT-es-tSh"/>
+                    <connections>
+                        <outlet property="tableRent" destination="IpI-r3-SQ6" id="4ej-Mk-Kjq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hs-y3-bTE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4332" y="2017"/>
+            <point key="canvasLocation" x="4331.884057971015" y="2016.9642857142856"/>
         </scene>
-        <!--Item 2-->
+        <!--Vehicle List View Controller-->
         <scene sceneID="lYZ-MA-nA1">
             <objects>
-                <viewController id="dc8-PI-6l9" sceneMemberID="viewController">
+                <viewController id="dc8-PI-6l9" customClass="VehicleListViewController" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cf4-YS-qLU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -579,13 +629,30 @@
                                 <rect key="frame" x="10" y="95" width="394" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Tn0-yr-cKx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vehicleCell" id="Tn0-yr-cKx" customClass="VehicleCustomCell" customModule="FinalProjectzW2020MAD3115" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="394" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tn0-yr-cKx" id="eGi-Jc-dgP">
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vGt-DN-ltb">
+                                                    <rect key="frame" x="20" y="0.0" width="42" height="20.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bB-JW-fcD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="1bB-JW-fcD" id="dWZ-x4-CcK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -602,11 +669,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dm0-9n-YIs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Dxe-bY-hla"/>
+                    <tabBarItem key="tabBarItem" title="" image="vehicle" id="Dxe-bY-hla"/>
+                    <connections>
+                        <outlet property="segmentVehicleType" destination="Ulx-4U-mCd" id="O5G-lv-Io6"/>
+                        <outlet property="vehicleTable" destination="Jkb-Tg-6xG" id="nkh-Rc-6sr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JxL-ue-IH4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3222" y="2017"/>
+            <point key="canvasLocation" x="3221.739130434783" y="2016.9642857142856"/>
         </scene>
         <!--Person List View Controller-->
         <scene sceneID="Eb0-Bb-pfy">
@@ -713,6 +784,8 @@
         <image name="homepagelogo" width="3923" height="3704"/>
         <image name="ownerLogo" width="750" height="500"/>
         <image name="person" width="40" height="40"/>
+        <image name="rent" width="40" height="40"/>
         <image name="supercar-wallpapers-bugatti-2" width="1280" height="800"/>
+        <image name="vehicle" width="40" height="40"/>
     </resources>
 </document>
